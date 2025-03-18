@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./src/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,10 +15,10 @@
         <div id="header">
             <img id="logo" src="./assets/Logo-horizontal.svg">
             <div id="menuHeader">
-                <button>Início</button>
-                <button>Serviços</button>
-                <button>Sobre nós</button>
-                <button>Contato</button>
+                <button class="botaoMenu">Início</button>
+                <button class="botaoMenu">Serviços</button>
+                <button class="botaoMenu">Sobre nós</button>
+                <button class="botaoMenu">Contato</button>
             </div>
         </div>
         <div id="banners">
@@ -31,9 +32,35 @@
                 
             </div>
             <div id="bannerCarrossel">
-
+                <div id="conteudoCarrossel">
+                    <button id="prevButton" onclick="changeSlide(-1)"><img class="button" src="./assets/arrow_back_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"></button>
+                    <div id="banner1" class="slider on">
+                        <img class="imgBanner" id="pata1"  src="./assets/pata.svg">
+                        <img class="imgBanner" id="vacina" src="./assets/vacina.svg">
+                        <img class="imgBanner" id="pata2" src="./assets/pata.svg">
+                        <div id="textBanner1">
+                            <h1>Campanha de vacinação</h1>
+                            <h2>Nos dias 19 a 28 de novembro</h2>
+                            <button></button>
+                        </div>
+                        <img id="imgGato" src="./assets/gato.svg">
+                    </div>
+                    <div id="banner2" class="slider">
+    
+                    </div>
+                    <div id="banner3" class="slider">
+    
+                    </div>
+                    <button id="fwButton" onclick="changeSlide(1)"><img class="button" src="./assets/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"></button>
+                </div>  
+                <div class="ellipses">
+                    <img src="./assets/Ellipse 1.png" class="ellipse">
+                    <img src="./assets/Ellipse 2.png" class="ellipse">
+                    <img src="./assets/Ellipse 2.png" class="ellipse">
+                </div>
             </div>
         </div>
     </div>
+    <script src="./src/script.js"></script>
 </body>
 </html>

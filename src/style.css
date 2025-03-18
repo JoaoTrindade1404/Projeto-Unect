@@ -1,0 +1,207 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    background: #F8F8FF;
+    border: 1px #0000001A solid;
+    height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    width: 250px;
+    height: 69.82413482666016;
+}
+
+#menuHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.botaoMenu {
+    font-family: "Poppins", sans-serif;
+    color: rgba(6, 54, 67, 1);
+    font-weight: 400;
+    font-size: 24px;
+    padding: 0px 4px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botaoMenu:hover {
+    background: rgba(107, 183, 203, 0.4);
+    border-radius: 8px;
+}
+
+#banners {
+    display: flex;
+    background: rgba(199, 235, 251, 1);
+    height: 1000px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#banner {
+    display: flex;
+    background: rgba(248, 248, 255, 1);
+    height: 450px;
+    width: 1180px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 39px 80px;
+    position: relative;
+}
+
+#bannerCarrossel {
+    display: flex;
+    margin-top: -70px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bannerText>button {
+    background: rgba(15, 99, 122, 1);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height: 72px;
+    width: 280px;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 8dvh;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#bannerText>button:hover{
+    background: rgba(124, 203, 224, 1);
+    color: rgba(6, 54, 67, 1);
+}
+
+#bannerText>h1 {
+    font-family: "Poppins", sans-serif;
+    color: rgba(6, 54, 67, 1);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#bannerText {
+    display: flex;
+    flex-direction: column;
+}
+
+#bannerImg {
+    position: absolute;
+    left: 35dvh;
+    top: 20dvh;
+}
+
+#bannerWave {
+    position: absolute;
+    left: 105dvh;
+    top: 1dvh;
+}
+
+#conteudoCarrossel{
+    display: flex;
+    position: relative;
+}
+
+#banner1{
+    width: 120dvh;
+    height: 30dvh;
+    background: rgba(99, 179, 201, 1);
+    border-radius: 8px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner2 {
+    width: 120dvh;
+    height: 30dvh;
+    background: black;
+    border-radius: 8px;
+}
+
+#banner3 {
+    width: 120dvh;
+    height: 30dvh;
+    background: white;
+    border-radius: 8px;
+}
+
+.slider {
+    display: none;
+    transition: transform 0.5s ease-in-out;
+}
+
+.on {
+    display: flex;
+}
+
+#prevButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+#fwButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.button {
+    width: 5dvw;
+    height: 5dvh;
+    pointer-events: auto;
+}
+
+.ellipses {
+    margin-top: 12px;
+}
+
+.ellipse {
+    margin: 10px;
+}
+
+.imgBanner {
+    width: 7dvw;
+    height: 14dvh;
+    position: absolute;
+}
+
+#pata1 {
+    left: 20px;
+    top: 10px;
+}
+
+#vacina {
+    width: 8dvw;
+    height: 16dvh;
+    left: 120px;
+    top: 90px;
+}
+
+#pata2 {
+    left: 280px;
+    bottom: 30px;
+    transform: rotate(20deg);
+}
+
+#imgGato {
+    position: absolute;
+    right: 80px;
+    bottom: 4px;
+}
