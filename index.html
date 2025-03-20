@@ -35,28 +35,45 @@
                 <div id="conteudoCarrossel">
                     <button id="prevButton" onclick="changeSlide(-1)"><img class="button" src="./assets/arrow_back_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"></button>
                     <div id="banner1" class="slider on">
-                        <img class="imgBanner" id="pata1"  src="./assets/pata.svg">
-                        <img class="imgBanner" id="vacina" src="./assets/vacina.svg">
-                        <img class="imgBanner" id="pata2" src="./assets/pata.svg">
-                        <div id="textBanner1">
-                            <h1>Campanha de vacinação</h1>
-                            <h2>Nos dias 19 a 28 de novembro</h2>
-                            <button></button>
+                        <div id="conteudoBanner1">
+                            <img class="imgBanner" id="pata1"  src="./assets/pata.svg">
+                            <img class="imgBanner" id="vacina" src="./assets/vacina.svg">
+                            <img class="imgBanner" id="pata2" src="./assets/pata.svg">
+                            <div id="textBanner1">
+                                <h1>Campanha de vacinação</h1>
+                                <h2>Nos dias 19 a 28 de novembro</h2>
+                                <button>Saiba mais</button>
+                            </div>
+                            <img id="imgGato" src="./assets/gato.svg">
                         </div>
-                        <img id="imgGato" src="./assets/gato.svg">
                     </div>
                     <div id="banner2" class="slider">
-    
+                        <div id="conteudoBanner2">
+                            <div id="textBanner2">
+                                <h1>Campanha de doação</h1>
+                                <p>Dê um lar cheio de amor a quem só quer te fazer feliz!<br>Adote um amigo de quatro patas e transforme sua<br>vida e a dele.</p>
+                                <button>Saiba mais</button>
+                            </div>
+                            <img id="gatoBanner2" src="./assets/gato banner2.png">
+                            <img id="cachorroBanner2" src="./assets/cachorro banner2.png">
+                        </div>
                     </div>
                     <div id="banner3" class="slider">
-    
+                        <div id="conteudoBanner3">
+                            <div id="textBanner3">
+                                <h1>Banho e tosa: cuidado e saúde para seu pet</h1>
+                                <p>Nossa clínica dispõe do serviço de higiene para seu Pet<br>permanecer limpo, cheiroso e longe de parasitas.</p>
+                                <button>Saiba mais</button>
+                            </div>
+                            <img src="./assets/gato banner3.png">
+                        </div>
                     </div>
                     <button id="fwButton" onclick="changeSlide(1)"><img class="button" src="./assets/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"></button>
                 </div>  
                 <div class="ellipses">
-                    <img src="./assets/Ellipse 1.png" class="ellipse">
-                    <img src="./assets/Ellipse 2.png" class="ellipse">
-                    <img src="./assets/Ellipse 2.png" class="ellipse">
+                    <img src="./assets/Ellipse 1.png" class="ellipse" onclick="goToSlide(0)">
+                    <img src="./assets/Ellipse 2.png" class="ellipse" onclick="goToSlide(1)">
+                    <img src="./assets/Ellipse 2.png" class="ellipse" onclick="goToSlide(2)">
                 </div>
             </div>
         </div>

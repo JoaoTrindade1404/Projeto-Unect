@@ -11,6 +11,10 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    z-index: 1000; 
+    top: 0;           
+    left: 0;
 }
 
 #logo {
@@ -33,6 +37,7 @@ body {
     border: none;
     cursor: pointer;
     transition: 0.2s;
+    background-color: #F8F8FF;
 }
 
 .botaoMenu:hover {
@@ -47,6 +52,7 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    margin-top: 140px;
 }
 
 #banner {
@@ -106,8 +112,8 @@ body {
 
 #bannerWave {
     position: absolute;
-    left: 105dvh;
-    top: 1dvh;
+    left: 75%;
+    top: 5%;
 }
 
 #conteudoCarrossel{
@@ -128,14 +134,19 @@ body {
 #banner2 {
     width: 120dvh;
     height: 30dvh;
-    background: black;
+    background-color: rgba(6, 54, 67, 1);
+    background-image: url("../assets/background\ banner.png");
     border-radius: 8px;
+    overflow: hidden;
 }
 
 #banner3 {
     width: 120dvh;
     height: 30dvh;
-    background: white;
+    background: rgba(248, 248, 255, 1);
+    background-image: url('../assets/chuva\ banner3.png'), url('../assets/guarda\ chuva.png');
+    background-repeat: no-repeat;
+    background-position: 32dvw, 0dvw 0dvh;
     border-radius: 8px;
 }
 
@@ -174,12 +185,19 @@ body {
 
 .ellipse {
     margin: 10px;
+    cursor: pointer;
 }
 
 .imgBanner {
     width: 7dvw;
     height: 14dvh;
     position: absolute;
+}
+
+#conteudoBanner1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #pata1 {
@@ -204,4 +222,139 @@ body {
     position: absolute;
     right: 80px;
     bottom: 4px;
+}
+
+#textBanner1 {
+    font-family: "Poppins", sans-serif;
+    margin-left: 360px;
+    margin-top: -60px;
+}
+
+#textBanner1 h1 {
+    color: rgba(6, 54, 67, 1);
+    font-weight: 700;
+    font-size: 28px;
+}
+
+#textBanner1 h2 {
+    color: rgba(15, 99, 122, 1);
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: -15px;
+}
+
+#textBanner1 button {
+    border: none;
+    width: 17dvw;
+    height: 7dvh;
+    border-radius: 8px;
+    color: rgba(6, 54, 67, 1);
+    font-family: "Poppins", sans-serif;
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: 700;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#textBanner1 button:hover {
+    background: rgba(6, 54, 67, 1);
+    color: rgba(248, 248, 255, 1);
+}
+
+#conteudoBanner2 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#gatoBanner2 {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+
+#cachorroBanner2 {
+    position: absolute;
+    right: 20%;
+    bottom: 0%;
+}
+
+#textBanner2 {
+    font-family: "Poppins", sans-serif;
+    color: rgba(250, 253, 255, 1);
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+#textBanner2 p {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2%;
+}
+
+#textBanner2 button {
+    font-family: "Poppins", sans-serif;
+    border: none;
+    width: 16dvw;
+    height: 7dvh;
+    font-size: 28px;
+    color: rgba(6, 54, 67, 1);
+    border-radius: 8px;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#textBanner2 button:hover {
+    background: rgba(124, 203, 224, 1);
+}
+
+#conteudoBanner3 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+#textBanner3 {
+    font-family: "Poppins", sans-serif;
+    color: rgba(6, 54, 67, 1);
+    margin-top: 10px;
+}
+
+#textBanner3 h1{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#textBanner3 p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#textBanner3 button {
+    font-family: "Poppins", sans-serif;
+    border: none;
+    width: 14dvw;
+    height: 7dvh;
+    font-size: 26px;
+    background: rgba(6, 54, 67, 1);
+    color: rgba(248, 248, 255, 1);
+    border-radius: 8px;
+    font-weight: 700;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#textBanner3 button:hover {
+    background: rgba(124, 203, 224, 1);
+    color: rgba(6, 54, 67, 1);
 }

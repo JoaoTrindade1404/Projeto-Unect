@@ -26,4 +26,14 @@ function changeSlide(direction) {
     updateEllipse()
 }
 
+function goToSlide(index) {
+    slides[currentIndex].classList.remove("on");
+
+    currentIndex = index;
+
+    slides[currentIndex].classList.add("on");
+    updateEllipse()
+}
+
+
 updateEllipse()
