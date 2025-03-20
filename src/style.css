@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     padding: 0;
     margin: 0;
@@ -357,4 +361,156 @@ body {
 #textBanner3 button:hover {
     background: rgba(124, 203, 224, 1);
     color: rgba(6, 54, 67, 1);
+}
+
+#divQuemsomos{
+    background-color: #89C5D5;
+    height: 300px;
+    top: 1002px;
+    width: 1920px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/fundo-animais-icons\ 2.png");
+}
+
+#texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+
+.quemsomos{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #063643;
+    letter-spacing: 0%;
+    line-height: 100%;
+    width: 177px;
+    height: 36px;
+    top: 24px;
+    left: 862px;
+}
+
+.objetivo{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    line-height: 26px;
+    letter-spacing: 2%;
+    color: #063643;
+    text-align: justify;
+    width: 699px;
+    height: 104px;
+    top: 93px;
+    left: 862px;
+}
+
+#logo{
+    height: 300px;
+    width: 300px;
+    left: 459px;
+}
+
+#divNossosservicos{
+    background-color: #63B3C9;
+    width: 1920px;
+    height: 743px;
+    top: 1302px;
+    background-image: url("../assets/fundo-animais-icons\ 2.png");
+
+}
+
+.Nossosservicos{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #063643;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 199px;
+    height: 29px;
+    top: 53px;
+    left: 450px;
+
+}
+
+#paragrafoGato{
+    height: 418px;
+    top: 118px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 92px;
+}
+
+#concat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+#gato{
+    width: 320px;
+    height: 260px;
+    top: 15px;
+    left: 450px;
+    border-radius: 8px;
+    border-width: 1px;
+
+}
+
+.descricao1{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;;
+    line-height: 30px;
+    letter-spacing: 2%;
+    color: #063643;
+    text-align: justify;
+    width: 620px;
+    height: 150px;
+    top: 37px;
+    left: 862px;
+}
+
+#paragrafoCachorro{
+    background-color: #89C5D5;
+    background-image: url("../assets/fundo-animais-icons\ 2.png");
+    height: 325px;
+    top: 418px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.descricao2{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;;
+    line-height: 30px;
+    letter-spacing: 2%;
+    color: #063643;
+    text-align: justify;
+    width: 620px;
+    height: 120px;
+    top: 83px;
+    left: 466px;
+
+}
+
+#cachorro{
+    width: 320px;
+    height: 260px;
+    top: 25px;
+    left: 1150px;
+    border-radius: 8px;
+    border-width: 1px;
 }
