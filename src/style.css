@@ -603,6 +603,11 @@ body{
     line-height: normal;
 }
 
+.imgMed {
+    height: 25dvh;
+    width: 13dvw;
+}
+
 footer {
     display: flex;
     width: 100%;
