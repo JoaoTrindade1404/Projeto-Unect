@@ -17,10 +17,10 @@
         <div id="header">
             <img id="logo" src="./assets/Logo-horizontal.svg">
             <div id="menuHeader">
-                <button class="botaoMenu">Início</button>
-                <button class="botaoMenu">Serviços</button>
-                <button class="botaoMenu">Sobre nós</button>
-                <button class="botaoMenu">Contato</button>
+                <a href="#footer"><button id="initButton"class="botaoMenu">Início</button></a>
+                <button id="servicesButton" class="botaoMenu">Serviços</button>
+                <button id="aboutustButton" class="botaoMenu">Sobre nós</button>
+                <button id="contactButton" class="botaoMenu">Contato</button>
             </div>
         </div>
         <div id="banners">
@@ -29,7 +29,7 @@
                     <h1>Cuidando do Seu Pet com <br> Profissionalismo e Carinho</h1>
                     <button>Entre em contato</button>
                 </div>
-                <span id="bannerImg"><img width="1000" height="300" src="./assets/img.svg"></span>
+                <span id="bannerImg"><img src="./assets/img.svg"></span>
                 <span id="bannerWave"><img width="300" height="300" src="./assets/Waveform.svg"></span>
                 
             </div>
@@ -105,6 +105,73 @@
                 <img src = "assets/Medicina-Veterinaria 1.png" id = "cachorro" />
             </div>
         </div>
+        <div id="nossosProfissionais">
+            <div id="containerProfissionais">
+                <h1>Nossos profissionais</h1>
+                <div id="profissionais">
+                    <span id="med1" class="med">
+                        <img src="./assets/medico1.png">
+                        <h1 class="nameMed">Carlos De Souza</h1>
+                        <h2 class="areaMed">Cirurgia Veterinária</h2>
+                    </span>
+                    <span id="med2" class="med">
+                        <img src="./assets/medico2.png">
+                        <h1 class="nameMed">João Paulo</h1>
+                        <h2 class="areaMed">Dermatologia Veterinária</h2>
+                    </span>
+                    <span id="med3" class="med">
+                        <img src="./assets/medico3.png">
+                        <h1 class="nameMed">José da Silva</h1>
+                        <h2 class="areaMed">Patologia</h2>
+                    </span>
+                    <span id="med4" class="med">
+                        <img src="./assets/medico4.png">
+                        <h1 class="nameMed">fulano</h1>
+                        <h2 class="areaMed">Anestesiologia</h2>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div id="footerContent">
+                <img src="./assets/logo.svg">
+                <ul>
+                    <p class="ulTitle">NOSSOS SERVIÇOS</p>
+                    <li>
+                        SOBRE NÓS
+                    </li>
+                    <li>
+                        CONSULTA VETERINÁRIA
+                    </li>
+                    <li>
+                        NOSSOS SERVIÇOS
+                    </li>
+                </ul>
+                <ul>
+                    <p class="ulTitle">INSTITUCIONAL</p>
+                    <li>
+                        PROGRAMA DE ADOÇÃO
+                    </li>
+                    <li>
+                        TERMOS DE COMPROMISSO 
+                    </li>
+                    <li>
+                        UNECT JR 
+                    </li>
+                </ul>
+                <div id="nossosContatos">
+                    <h1>NOSSOS CONTATOS</h1>
+                    <div id="socialMedias">
+                        <img src="./assets/icon-whatsapp.svg">
+                        <img src="./assets/icon-instagram.svg">
+                        <img src="./assets/icon-face.svg">
+                    </div>
+                </div>
+            </div>
+            <div id="footerUnect">
+                <h1>UNECT JR - TODOS OS DIREITOS RESERVADOS</h1>
+            </div>
+        </footer>
     </div>
     <script src="./src/script.js"></script>
 </body>

@@ -35,5 +35,4 @@ function goToSlide(index) {
     updateEllipse()
 }
 
-
 updateEllipse()
