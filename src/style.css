@@ -395,7 +395,7 @@ body{
     background-color: #89C5D5;
     height: 300px;
     top: 1002px;
-    width: 1920px;
+    width: 100%;
     border-radius: 2px;
     display: flex;
     flex-direction: row;
@@ -448,7 +448,7 @@ body{
 
 #divNossosservicos{
     background-color: #63B3C9;
-    width: 1920px;
+    width: 100%;
     height: 743px;
     top: 1302px;
     background-image: url("../assets/fundo-animais-icons\ 2.png");
@@ -809,4 +809,312 @@ footer {
     border: 1px solid var(--Colors-blue1100, #063643);
     cursor: pointer;
 }
+
+#nossoContato{
+    background-color: #E2F5FA;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+#textoQuadrado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 24px;
+}
+
+#titulo{
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-family: 'Inter', sans-serif;
+    color: #063643;
+    margin-bottom: 24px;
+}
+
+#fundoQuadrado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+}
+
+
+#info{
+    width: 420px;
+    height: 692px;
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid rgba(6,54,67,0.4);
+    background-color: #F8F8FF;
+}
+
+#infoContent{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+#infoContent 
+
+#local{
+    position: relative;
+    width: 117px;
+    height: 24px;
+    left: 21px;
+    top: 31px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #063643;
+}
+
+#logradouro{
+    position: relative;
+    width: 280px;
+    height: 78px;
+    top: 55px;
+    left:20px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #063643;
+}
+
+#mapaPointer{
+    position: relative;
+    top: 100px;
+    left: 35px;
+    width: 350px;
+    height: 244px;
+}
+
+#redesociais{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    width: 212px;
+    height: 108px;
+    top: 145px;
+    left: 20px;
+}
+
+#whatsapp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 168px;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+
+#zapzap{
+    height: 36px;
+    width: 36px;
+}
+
+#textowpp{
+    height: 25px;
+    width: 120px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+#instagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 212px;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+
+#insta{
+    height: 36px;
+    width: 36px;
+}
+
+#textoint{
+    height: 25px;
+    width: 164px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+#facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 195px;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+
+#fb{
+    height: 36px;
+    width: 36px;
+}
+
+#textofb{
+    height: 25px;
+    width: 147px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+#formulario{
+    width: 600px;
+    height: 692px;
+    border-radius: 0px 8px 8px 0px;
+    border: 1px solid rgba(6,54,67,0.4);
+    background-color: #FAFDFF;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#nome{
+    width: 520px;
+    height: 92px;
+}
+
+#sobreNome{
+    width: 520px;
+    height: 92px;
+}
+
+#email{
+    width: 520px;
+    height: 92px;
+}
+
+#mensagem{
+    width: 520px;
+    height: 152px;
+}
+
+#txt{
+    width: 120px;
+    height: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #063643;
+    margin: 0%;
+}
+
+.areadetexto1{
+    width: 520px;
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid rgba(6,54,67,0.4);
+}
+
+.areadetexto1:focus{
+    border: 2px solid rgba(6,54,67);
+}
+
+.areadetexto2{
+    width: 520px;
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid rgba(6,54,67,0.4);
+}
+
+.areadetexto2:focus{
+    border: 2px solid rgba(6,54,67);
+}
+
+.areadetexto3{
+    width: 520px;
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid rgba(6,54,67,0.4);
+}
+
+.areadetexto3:focus{
+    border: 2px solid rgba(6,54,67);
+}
+
+.areadetexto4{
+    width: 520px;
+    height: 120px;
+    border-radius: 8px;
+    border: 1px solid rgba(6,54,67,0.4);
+}
+
+.areadetexto4:focus{
+    border: 2px solid rgba(6,54,67);
+}
+
+.eventohover{
+    cursor: pointer;
+}
+
+.eventobotao{
+    cursor: default;
+}
+
+.botaoEnviar{
+    width: 144px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #0F637A;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 188px;
+}
+
+#txtBotao{
+    width: 75px;
+    height: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #F8F8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botaoEnviar:hover{
+    background-color: #063643;
+    cursor: pointer;
+}
+
 
