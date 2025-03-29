@@ -15,12 +15,12 @@
 <body>
     <div id="container">
         <div id="header">
-            <a href="#banner"><img id="logo" src="./assets/Logo-horizontal.svg"></a>
+            <a href="#banner"><img id="logoHeader" src="./assets/Logo-horizontal.svg"></a>
             <div id="menuHeader">
                 <a href="#banner"><button id="initButton"class="botaoMenu">Início</button></a>
                 <a href="#divNossosservicos"><button id="servicesButton" class="botaoMenu">Serviços</button></a>
                 <a href="#divQuemsomos"><button id="aboutustButton" class="botaoMenu">Sobre nós</button></a>
-                <button id="contactButton" class="botaoMenu">Contato</button>
+                <a href="#nossosContatos"><button id="contactButton" class="botaoMenu">Contato</button></a>
             </div>
         </div>
         <div id="banners">
@@ -131,43 +131,159 @@
                     </span>
                 </div>
             </div>
-            <div id="avaliacoes"> <! Avaliações começa aqui -->
+            <div id="avaliacoes"> 
                 <h1>Avaliações (34)</h1>
-                <div id="comentarios">
-                    <span class="avaliacao">
-                        <img src="./assets/Foto_comentario.png">
-                        <div class="comment">
-                            <img src="./assets/stars.png">
-                            <h1>Carlos Alberto</h1>
-                            <p>Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.</p>
-                        </div>
-                    </span>
-                    <span class="divisoria"></span>
-                    <span class="avaliacao">
-                        <img id="neymar" src="./assets/pexels-photo-2379005 1.png">
-                        <div class="comment">
-                            <img src="./assets/stars.png">
-                            <h1>Neymar Jr</h1>
-                            <p>Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e <br>atenciosos.</p>
-                        </div>
-                    </span>
-                    <span class="divisoria"></span>
-                    <span class="avaliacao">
-                        <img src="./assets/MulherComentario.png">
-                        <div class="comment">
-                            <img src="./assets/stars.png">
-                            <h1>Josseana da Silva</h1>
-                            <p>Excelente clínica! Desde o primeiro contato, fui atendido com profissionalismo e <br>gentileza.</p>
-                        </div>
-                    </span>
+                <div class = "carrossel" data-carrossel>
+    
+                    <ul data-comentarios>
+    
+                        <li class="comentarios" data-active>
+                            <div>
+                                <span class="avaliacao">
+                                    <img src="./assets/Foto_comentario.png">
+                                    <div class="comment">
+                                        <img src="./assets/stars.png">
+                                        <h1>Carlos Alberto</h1>
+                                        <p>Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.</p>
+                                    </div>
+                                </span>
+        
+                                <span class="divisoria"></span>
+        
+                                <span class="avaliacao">
+                                    <img id="neymar" src="./assets/pexels-photo-2379005 1.png">
+                                    <div class="comment">
+                                        <img src="./assets/stars.png">
+                                        <h1>Neymar Jr</h1>
+                                        <p>Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e <br>atenciosos.</p>
+                                    </div>
+                                </span>
+        
+                                <span class="divisoria"></span>
+        
+                                <span class="avaliacao">
+                                    <img src="./assets/MulherComentario.png">
+                                    <div class="comment">
+                                        <img src="./assets/stars.png">
+                                        <h1>Josseana da Silva</h1>
+                                        <p>Excelente clínica! Desde o primeiro contato, fui atendido com profissionalismo e <br>gentileza.</p>
+                                    </div>
+                                </span>
+                            </div>
+    
+                            <div class = scroll>
+                                <span class="scrollContent">
+                                    <button class="carousel-button next" style="visibility: hidden;">
+                                        <img src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3.png">
+                                    </button>
+                                    <h1>1</h1>
+                                    <button class="carousel-button next" data-carrossel-botao = "next">
+                                        <img src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3.png">
+                                    </button>
+                                </span>
+                            </div>
+    
+                        </li>
+    
+                        <li class="comentarios">
+                            <div>
+                                <span class="avaliacao">
+                                    <img src="./assets/Foto_comentario.png">
+                                    <div class="comment">
+                                        <img src="./assets/stars.png">
+                                        <h1>João Henrique</h1>
+                                        <p>Atendimento de primeira, cuidam muito bem dos animais e sempre explicam tudo com <br>clareza.</p>
+                                    </div>
+                                </span>
+        
+                                <span class="divisoria"></span>
+        
+                                <span class="avaliacao">
+                                    <img id="neymar" src="./assets/pexels-photo-2379005 1.png">
+                                    <div class="comment">
+                                        <img src="./assets/stars.png">
+                                        <h1>Adamilton Jr</h1>
+                                        <p>A clínica é muito bem equipada, e os profissionais são incríveis, mas o tempo de espera<br> poderia ser menor.</p>
+                                    </div>
+                                </span>
+        
+                                <span class="divisoria"></span>
+        
+                                <span class="avaliacao">
+                                    <img src="./assets/MulherComentario.png">
+                                    <div class="comment">
+                                        <img src="./assets/stars.png">
+                                        <h1>Luciana da Silva</h1>
+                                        <p>Profissionais capacitados e atenciosos, meu gato recebeu o melhor cuidado. Recomendo<br> muito!</p>
+                                    </div>
+                                </span>
+                            </div>
+                            
+                            <div class = scroll>
+                                <span class="scrollContent">
+                                    <button class="carousel-button prev" data-carrossel-botao = "prev">
+                                        <img src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3 2.png">
+                                    </button>
+                                    <h1>2</h1>
+                                    <button class="carousel-button next" data-carrossel-botao = "next">
+                                        <img src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3.png">
+                                    </button>
+                                </span>
+                            </div>
+                            
+                        </li>
+    
+                        <li class="comentarios">
+                            <div>
+                                <span class="avaliacao">
+                                    <img src="./assets/Foto_comentario.png">
+                                    <div class="comment">
+                                        <img src="./assets/stars.png">
+                                        <h1>Matheus Brito</h1>
+                                        <p>A equipe é super dedicada e o ambiente é acolhedor, perfeito para quem se importa<br> com o bem-estar do pet.</p>
+                                    </div>
+                                </span>
+        
+                                <span class="divisoria"></span>
+        
+                                <span class="avaliacao">
+                                    <img id="neymar" src="./assets/pexels-photo-2379005 1.png">
+                                    <div class="comment">
+                                        <img src="./assets/stars.png">
+                                        <h1>Luiz Jr</h1>
+                                        <p>Atendimento excelente e muito atencioso! Meu pet recebeu todo o cuidado necessário e<br> ficou ótimo.</p>
+                                    </div>
+                                </span>
+        
+                                <span class="divisoria"></span>
+        
+                                <span class="avaliacao">
+                                    <img src="./assets/MulherComentario.png">
+                                    <div class="comment">
+                                        <img src="./assets/stars.png">
+                                        <h1>Clariane da Silva</h1>
+                                        <p>Fiquei satisfeita com o atendimento, mas achei os preços um pouco altos para alguns<br> serviços.</p>
+                                    </div>
+                                </span>
+                            </div>
+    
+                            <div class = scroll>
+                                <span class="scrollContent">
+                                    <button class="carousel-button prev" data-carrossel-botao = "prev">
+                                        <img src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3 2.png">
+                                    </button>
+                                    <h1>3</h1>
+                                </span>
+                            </div>
+                               
+                        </li>
+    
+                    </ul>
+                        
+                    
                 </div>
-                <div id="scroll">
-                    <h1>1</h1>
-                    <button>
-                        <img src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3.png">
-                    </button>
-                </div>
-            </div> <! Termina aqui -->
+    
+            </div> 
             <div id = "nossoContato">
                 <div id = "textoQuadrado">  
                     <div id = "titulo">
