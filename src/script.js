@@ -101,4 +101,35 @@ botoes.forEach(botao => {
     });
 });
 
+botoes.forEach(botao => {
+    botao.addEventListener("mousedown", () => {
 
+        if(botao.dataset.carrosselBotao === "next"){
+            document.querySelectorAll(".imgSetaDir").forEach(i =>{
+                i.src="./assets/Vector dir.png";
+            });
+        } else {
+            document.querySelectorAll(".imgSetaEs").forEach(i =>{
+                i.src="./assets/Vector es.png";
+            });
+        };
+        botao.classList.add("carrossel-botao-click");
+        botao.classList.remove("carrossel-botao");
+    }); 
+});
+
+botoes.forEach(botao => {
+    botao.addEventListener("mouseup", () => {
+        if(botao.dataset.carrosselBotao === "next"){
+            document.querySelectorAll(".imgSetaDir").forEach(j =>{
+                j.src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3.png";
+            })
+        } else {
+            document.querySelectorAll(".imgSetaEs").forEach(j =>{
+                j.src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3 2.png";
+            })
+        };
+        botao.classList.remove("carrossel-botao-click");
+        botao.classList.add("carrossel-botao");
+    }); 
+});

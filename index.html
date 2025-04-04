@@ -15,6 +15,8 @@
 <body>
     <div id="container">
         <div id="header">
+            <img class="onlyMobile" src="./assets/Menu.png">
+            <img class="onlyMobile" id="mobileLogo" src="./assets/LogoMobile.png">
             <a href="#banner"><img id="logoHeader" src="./assets/Logo-horizontal.svg"></a>
             <div id="menuHeader">
                 <a href="#banner"><button id="initButton"class="botaoMenu">Início</button></a>
@@ -26,11 +28,13 @@
         <div id="banners">
             <div id="banner">
                 <div id="bannerText">
-                    <h1>Cuidando do Seu Pet com <br> Profissionalismo e Carinho</h1>
+                    <h1 class="onlyDesktop">Cuidando do Seu Pet com <br> Profissionalismo e Carinho</h1>
+                    <h1 class="onlyMobile">Cuidando do seu <br>animal com muito <br>amor</h1>
+                    <img class="onlyMobile" id="bannerImgMbl" src="./assets/img.svg">
                     <button>Entre em contato</button>
                 </div>
-                <span id="bannerImg"><img src="./assets/img.svg"></span>
-                <span id="bannerWave"><img width="300" height="300" src="./assets/Waveform.svg"></span>
+                <span><img class="onlyDesktop" id="bannerImg" src="./assets/img.svg"></span>
+                <span><img class="onlyDesktop" id="bannerWave" src="./assets/Waveform.svg"></span>
                 
             </div>
             <div id="bannerCarrossel">
@@ -155,7 +159,7 @@
                                     <div class="comment">
                                         <img src="./assets/stars.png">
                                         <h1>Neymar Jr</h1>
-                                        <p>Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e <br>atenciosos.</p>
+                                        <p>Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e atenciosos.</p>
                                     </div>
                                 </span>
         
@@ -171,16 +175,11 @@
                                 </span>
                             </div>
     
-                            <div class = scroll>
-                                <span class="scrollContent">
-                                    <button class="carousel-button next" style="visibility: hidden;">
-                                        <img src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3.png">
-                                    </button>
-                                    <h1>1</h1>
-                                    <button class="carousel-button next" data-carrossel-botao = "next">
-                                        <img src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3.png">
-                                    </button>
-                                </span>
+                            <div id = scroll>
+                                <h1>1</h1>
+                                <button class="carrossel-botao next" id = "botao-carrossel" data-carrossel-botao = "next">
+                                    <img class = 'imgSetaDir' src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3.png">
+                                </button>
                             </div>
     
                         </li>
@@ -192,7 +191,7 @@
                                     <div class="comment">
                                         <img src="./assets/stars.png">
                                         <h1>João Henrique</h1>
-                                        <p>Atendimento de primeira, cuidam muito bem dos animais e sempre explicam tudo com <br>clareza.</p>
+                                        <p>Atendimento de primeira, cuidam muito bem dos animais e sempre explicam tudo com clareza.</p>
                                     </div>
                                 </span>
         
@@ -203,7 +202,7 @@
                                     <div class="comment">
                                         <img src="./assets/stars.png">
                                         <h1>Adamilton Jr</h1>
-                                        <p>A clínica é muito bem equipada, e os profissionais são incríveis, mas o tempo de espera<br> poderia ser menor.</p>
+                                        <p>A clínica é muito bem equipada, e os profissionais são incríveis, mas o tempo de espera poderia ser menor.</p>
                                     </div>
                                 </span>
         
@@ -214,21 +213,19 @@
                                     <div class="comment">
                                         <img src="./assets/stars.png">
                                         <h1>Luciana da Silva</h1>
-                                        <p>Profissionais capacitados e atenciosos, meu gato recebeu o melhor cuidado. Recomendo<br> muito!</p>
+                                        <p>Profissionais capacitados e atenciosos, meu gato recebeu o melhor cuidado. Recomendo muito!</p>
                                     </div>
                                 </span>
                             </div>
                             
-                            <div class = scroll>
-                                <span class="scrollContent">
-                                    <button class="carousel-button prev" data-carrossel-botao = "prev">
-                                        <img src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3 2.png">
-                                    </button>
-                                    <h1>2</h1>
-                                    <button class="carousel-button next" data-carrossel-botao = "next">
-                                        <img src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3.png">
-                                    </button>
-                                </span>
+                            <div id = scroll>
+                                <button class="carrossel-botao prev" id = "botao-carrossel" data-carrossel-botao = "prev">
+                                    <img class = 'imgSetaEs' src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3 2.png">
+                                </button>
+                                <h1>2</h1>
+                                <button class="carrossel-botao next" id = "botao-carrossel" data-carrossel-botao = "next">
+                                    <img class = 'imgSetaDir' src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3.png">
+                                </button>
                             </div>
                             
                         </li>
@@ -240,7 +237,7 @@
                                     <div class="comment">
                                         <img src="./assets/stars.png">
                                         <h1>Matheus Brito</h1>
-                                        <p>A equipe é super dedicada e o ambiente é acolhedor, perfeito para quem se importa<br> com o bem-estar do pet.</p>
+                                        <p>A equipe é super dedicada e o ambiente é acolhedor, perfeito para quem se importa com o bem-estar do pet.</p>
                                     </div>
                                 </span>
         
@@ -251,7 +248,7 @@
                                     <div class="comment">
                                         <img src="./assets/stars.png">
                                         <h1>Luiz Jr</h1>
-                                        <p>Atendimento excelente e muito atencioso! Meu pet recebeu todo o cuidado necessário e<br> ficou ótimo.</p>
+                                        <p>Atendimento excelente e muito atencioso! Meu pet recebeu todo o cuidado necessário e ficou ótimo.</p>
                                     </div>
                                 </span>
         
@@ -262,18 +259,16 @@
                                     <div class="comment">
                                         <img src="./assets/stars.png">
                                         <h1>Clariane da Silva</h1>
-                                        <p>Fiquei satisfeita com o atendimento, mas achei os preços um pouco altos para alguns<br> serviços.</p>
+                                        <p>Fiquei satisfeita com o atendimento, mas achei os preços um pouco altos para alguns serviços.</p>
                                     </div>
                                 </span>
                             </div>
     
-                            <div class = scroll>
-                                <span class="scrollContent">
-                                    <button class="carousel-button prev" data-carrossel-botao = "prev">
-                                        <img src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3 2.png">
-                                    </button>
-                                    <h1>3</h1>
-                                </span>
+                            <div id = scroll>
+                                <button class="carrossel-botao prev" id = "botao-carrossel" data-carrossel-botao = "prev">
+                                    <img class = 'imgSetaEs' src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3 2.png">
+                                </button>
+                                <h1>3</h1>
                             </div>
                                
                         </li>
@@ -282,6 +277,10 @@
                         
                     
                 </div>
+    
+            </div> 
+
+        </div> 
     
             </div> 
             <div id = "nossoContato">
