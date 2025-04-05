@@ -37,54 +37,27 @@ function goToSlide(index) {
 
 updateEllipse()
 
-const passamouse1 = document.querySelector('.areadetexto1');
+const textarea = document.querySelectorAll("[data-text-area]");
 
-passamouse1.addEventListener('mouseover', () => {
-    passamouse1.classList.add('eventohover');
+textarea.forEach(txta =>{
+
+    txta.addEventListener('mouseover', () => {
+        txta.classList.add("eventohover");
+    });
+
 });
 
-const tirapointer1 = document.querySelector('.areadetexto1');
+textarea.forEach(txta =>{
 
-tirapointer1.addEventListener('click', () => {
-    tirapointer1.classList.remove('eventohover');
+    txta.addEventListener('click', () => {
+        txta.classList.remove("eventohover");
+    });
+    
 });
 
-const passamouse2 = document.querySelector('.areadetexto2');
-
-passamouse2.addEventListener('mouseover', () => {
-    passamouse2.classList.add('eventohover');
-});
-
-const tirapointer2 = document.querySelector('.areadetexto2');
-
-tirapointer2.addEventListener('click', () => {
-    tirapointer2.classList.remove('eventohover');
-});
-
-const passamouse3 = document.querySelector('.areadetexto3');
-
-passamouse3.addEventListener('mouseover', () => {
-    passamouse3.classList.add('eventohover');
-});
-
-const tirapointer3 = document.querySelector('.areadetexto3');
-
-tirapointer3.addEventListener('click', () => {
-    tirapointer3.classList.remove('eventohover');
-});
-
-const passamouse4 = document.querySelector('.areadetexto4');
-
-passamouse4.addEventListener('mouseover', () => {
-    passamouse4.classList.add('eventohover');
-});
-
-const tirapointer4 = document.querySelector('.areadetexto4');
-
-tirapointer4.addEventListener('click', () => {
-    tirapointer4.classList.remove('eventohover');
-});
-
+function simulaEnvio(){
+    textarea.values = "";
+};
 
 const botoes = document.querySelectorAll("[data-carrossel-botao]");
 

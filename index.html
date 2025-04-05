@@ -84,18 +84,44 @@
             </div>
         </div>
         <div id = "divQuemsomos">
-            <div id = "logo">
+            <div id = "logo" class="onlyDesktop">
                 <img src="./assets/logoazulpindorama.png"/>
             </div>
-            <div id = "texto">
+            <div id = "texto" class="onlyDesktop">
                 <p class = "quemsomos">Quem somos?</p>
                 <p class = "objetivo">Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, 
                     com uma equipe dedicada e instalações modernas, buscamos garantir saúde e conforto em cada atendimento. 
                     Cuidamos do seu animalzinho como se fosse nosso!</p>
             </div>
         </div>
+
+        <div class="onlyMobile">
+            <div id = "quemSomosMobile">
+                <p id = "txtquemsomosMobile">Quem somos?</p>
+                <div id = "qmsLogoMobile">
+                    <img src="/assets/logoQuemSomos.svg">
+                </div>
+                <p id = "objetivoMobile" class="onlyMobile">
+                    Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, 
+                    com uma equipe dedicada e instalações modernas, buscamos <br> garantir saúde e conforto em cada atendimento. 
+                </p>
+                <p id = "lemaMobile" class="onlyMobile">
+                    Cuidamos do seu animalzinho com amor!
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="onlyMobile">
+            <div id = "nossosServicosMobile">
+                <p id = "tituloNsMobile">Nossos serviços visam o <br>cuidado do seu pet</p>
+                <p id = "textoNsMobile">Na nossa clínica veterinária, cada consulta é <br>realizada com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet.</p>
+                <button id = "botaoConsulta">Agende uma consulta</button>
+                <img id="imgGatoBannerMobile" src="./assets/Vector.svg">
+            </div>
+        </div>
+
         <div id = "divNossosservicos">
-            <div id = "paragrafoGato">
+            <div id = "paragrafoGato" class="onlyDesktop">
                 <div id = concat>
                     <p class = "Nossosservicos">Nossos serviços</p>
                     <img src = "assets/AdobeStock_107432576-scaled 1.png" id = "gato" />
@@ -103,15 +129,18 @@
                 <p class = "descricao1">Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet. 
                     Contamos com uma equipe experiente e atualizada para oferecer diagnósticos precisos e tratamentos eficazes. </p>
             </div>
-            <div id ="paragrafoCachorro">
+            <div id ="paragrafoCachorro" class="onlyDesktop">
                 <p class = "descricao2">Nós cuidamos do seu pet com o carinho e respeito que ele merece. 
                     Nossa equipe dedica atenção a cada detalhe, proporcionando um ambiente acolhedor e seguro para que seu animalzinho se sinta em casa. </p>
                 <img src = "assets/Medicina-Veterinaria 1.png" id = "cachorro" />
             </div>
         </div>
+
+
+        <span class="onlyMobile" id="h1Profissionais"><h1 class="onlyMobile">Nossos profissionais</h1></span>
         <div id="containerSecundario">
             <div id="containerProfissionais">
-                <h1>Nossos profissionais</h1>
+                <h1 class="onlyDesktop">Nossos profissionais</h1>
                 <div id="profissionais">
                     <span id="med1" class="med">
                         <img class="imgMed" src="./assets/medico1.png">
@@ -289,7 +318,7 @@
                         <p>Entre em contato</p>
                     </div>
                     <div id = "fundoQuadrado">
-                        <div id = "info">
+                        <div id = "info" class="onlyDesktop">
                             <div id="infoContent">
                                 <p id = "local">Localização</p>
                                 <p id = "logradouro">Rua - Fulana de tal, 9999 <br> CEP 99999-999 Pindorama/SP</p>
@@ -313,35 +342,44 @@
                             </div>
                         </div>
                         <div id = "formulario">
-                            <div id = "nome">
-                                <p id = txt>Nome</p>
-                                <button class = areadetexto1></button>
-                            </div>
-                            <div id = "sobreNome">
-                                <p id = txt>Sobrenome</p>
-                                <button class = areadetexto2></button>
-                            </div >
-                            <div id = "email">
-                                <p id = txt>E-mail</p>
-                                <button class = areadetexto3></button>
-                            </div>
-                            <div id = "mensagem">
-                                <p id = txt>Mensagem</p>
-                                <button class = areadetexto4></button>
-                            </div>
-                            <div class = "botaoEnviar">
-                                <p id = "txtBotao">Enviar</p>
-                            </div>
+                            <form onsubmit="simulaEnvio()">
+                                <div id = "nome">
+                                    <p id = txt>Nome</p>
+                                    <input type="text" class = areadetexto data-text-area>
+                                </div>
+                                <div id = "sobreNome">
+                                    <p id = txt>Sobrenome</p>
+                                    <input type="text" class = areadetexto data-text-area>
+                                </div>
+                                <div id = "email">
+                                    <p id = txt>E-mail</p>
+                                    <input type="text" class = areadetexto data-text-area>
+                                </div>
+                                <div id = "mensagem">
+                                    <p id = txt>Mensagem</p>
+                                    <input type="text" class = areadetexto2 data-text-area>
+                                </div>
+                                <button type="submit" class = "botaoEnviar">
+                                    <p id = "txtBotao">Enviar</p>
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="onlyMobile">
+            <div id="mediasMobile">
+                <img src="./assets/icon-whatsapp.svg" class="mediaMobileImg">
+                <img src="./assets/icon-instagram.svg" class="mediaMobileImg">
+                <img src="./assets/icon-face.svg" class="mediaMobileImg">
+            </div>
+        </div>
         <footer id="footer">
             <div id="footerContent">
-                <a href="#banner"><img src="./assets/logo.svg"></a>
+                <a class="onlyDesktop" href="#banner"><img src="./assets/logo.svg"></a>
                 <ul>
-                    <p class="ulTitle">NOSSOS SERVIÇOS</p>
+                    <p class="ulTitle"> NOSSOSSERVIÇOS</p>
                     <li>
                         SOBRE NÓS
                     </li>
@@ -364,9 +402,9 @@
                         UNECT JR 
                     </li>
                 </ul>
-                <div id="nossosContatos">
+                <div class="onlyDesktop" id="nossosContatos">
                     <h1>NOSSOS CONTATOS</h1>
-                    <div id="socialMedias">
+                    <div class="onlyDesktop" id="socialMedias">
                         <img src="./assets/icon-whatsapp.svg">
                         <img src="./assets/icon-instagram.svg">
                         <img src="./assets/icon-face.svg">

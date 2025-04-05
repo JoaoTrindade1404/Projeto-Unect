@@ -53,6 +53,7 @@ body{
     left: 0;
     padding: 0 20px;
     position: relative;
+    margin-top: 5dvh;
 }
 
 #mobileLogo{
@@ -73,6 +74,7 @@ body{
     background-image: url('../assets/Ellipse\ 5.png');
     background-repeat: no-repeat;
     position: relative;
+    margin-top: -5dvh;
 }
 #bannerText{
     display: flex;
@@ -87,6 +89,7 @@ body{
     font-size: 24px;
     font-weight: 800;
     margin-right: 30dvw;
+    margin-top: 5dvh;
 }
 #bannerText>button {
     background: rgba(15, 99, 122, 1);
@@ -109,7 +112,273 @@ body{
     width: 90dvw;
     height: 20dvh;
     margin-left: 6dvw;
-    margin-top: -8dvh;
+    margin-top: -9dvh;
+}
+
+#quemSomosMobile{
+    margin-top: 2dvh;
+    background-color: #89C5D5;
+    height: 50dvh;
+    width: 100%;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/fundo-animais-icons\ 2.png");
+    scroll-margin-top: 140px;
+    gap: 4dvh;
+}
+
+#txtquemsomosMobile{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #063643;
+    letter-spacing: 0%;
+    line-height: 100%;
+    text-align: center;
+}
+
+#qmsLogoMobile{
+    width: 167px;
+    height: 102px;
+}
+
+#objetivoMobile{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    line-height: 20px;
+    letter-spacing: 2%;
+    color: #063643;
+    text-align: center;
+    width: 365px;
+    height: 69px;
+}
+
+#lemaMobile{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    line-height: 20px;
+    letter-spacing: 2%;
+    color: #063643;
+    text-align: center;
+    height: 20px;
+}
+
+#nossosServicosMobile{
+    background-color: #63B3C9;
+    width: 100%;
+    height: 50dvh;
+    background-image: url("../assets/fundo-animais-icons\ 2.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4dvh;
+    position: relative;
+    overflow: hidden;
+}
+
+#imgGatoBannerMobile{
+    position: absolute;
+    right: 0%;
+    bottom: -15%;
+    width: 40dvw;
+    height: 30dvh;
+}
+
+#tituloNsMobile{
+    font-size: 6.5dvw;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #063643;
+    letter-spacing: 0%;
+    text-align: center;
+    line-height: 100%;
+    margin-top: -11dvh;
+}
+
+#textoNsMobile{
+    font-size: 3.5dvw;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    line-height: 20px;
+    letter-spacing: 2%;
+    color: #063643;
+    text-align: center;
+    width: 365px;
+    height: 69px;
+}
+
+#botaoConsulta{
+    background-color: #F8F8FF;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #063643;
+    line-height: 100%;
+    letter-spacing: 0%;
+    height: 39px;
+    width: 207px;
+    border-radius: 2px;
+    margin-top: -3dvh;
+}
+
+#botaoConsulta:hover{
+    color: #F8F8FF;
+    background-color: #063643;
+}
+
+#h1Profissionais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Colors-blue1100, #063643);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%;
+    margin: 30px 0 30px 0;
+}
+
+.imgMed{
+    width: 45dvw;
+    height: 45dvw;
+}
+
+#containerProfissionais {
+    height: fit-content;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    color: rgba(6, 54, 67, 1);
+    background: #F8F8FF;
+    padding: 20px 10px 20px 10px;
+}
+
+.nameMed {
+    color: var(--Colors-blue1100, #063643);
+    font-family: Inter;
+    font-size: 15.137px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.areaMed{
+    color: var(--Colors-blue1100, #063643);
+    font-family: Inter;
+    font-size: 10.812px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#profissionais {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas iguais */
+    flex-direction: row;
+    gap: 5dvw 0;
+    margin-top: 3dvh;
+}
+
+.med {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#mediasMobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10dvw;
+    width: 100%;
+    height: 20dvh;
+}
+
+.mediaMobileImg{
+    width: 15dvw;
+    height: 15dvw;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 30dvh;
+    flex-shrink: 0;
+    border-top: 1px solid var(--Colors-blue300, #C7EBFB);
+    background: #F8F8FF;
+    position: relative;
+}
+
+#footerContent img {
+    width: 12dvw;
+    height: 24dvh;
+}
+
+#footerContent {
+    display: flex;
+    width: 100%;
+    height: 85%;
+    gap: 5dvw;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#footerContent ul {
+    list-style: none;
+}
+
+.ulTitle {
+    color: var(--Colors-blue1100, #063643);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+#footerContent li {
+    color: var(--Colors-blue1100, #063643);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 8px 0;
+}
+
+#footerUnect {
+    width: 100%;
+    display: flex;
+    padding: 11px 0px;
+    justify-content: center;
+    align-items: center;
+    background: var(--Colors-blue1100, #063643);
+    height: 40px;
+    position: absolute;
+    bottom: 0%;
+}
+
+#footerUnect>h1 {
+    color: var(--Colors-blue200, #E2F5FA);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 1366px) {
@@ -125,6 +394,7 @@ body{
         width: 100%;
         justify-content: space-around;
         position: fixed;
+        margin-top: 0;
     }
     
     #logoHeader {
@@ -179,6 +449,7 @@ body{
         background: var(--Colors-white, #F8F8FF);
         box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
         scroll-margin-top: 250px;
+        margin-top: 0;
     }
     
     #bannerCarrossel {
@@ -212,6 +483,7 @@ body{
         color: rgba(6, 54, 67, 1);
         font-size: 21px;
         font-weight: 700;
+        margin-top: 0;
     }
     
     #bannerText {
@@ -220,6 +492,7 @@ body{
         align-items: unset;
         justify-content: unset;
         padding: 0;
+        margin-top: 0;
     }
     
     #bannerImg {
@@ -513,10 +786,15 @@ body{
     }
     
     #texto{
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: left;
+        left: 95px;
+        bottom: 30px;
+        gap: 3dvh;
+        margin-top: 2dvh;
     }
     
     
@@ -574,6 +852,7 @@ body{
         height: 29px;
         top: 53px;
         left: 450px;
+        margin-bottom: 4dvh;
     
     }
     
@@ -1128,8 +1407,8 @@ body{
         line-height: 100%;
         letter-spacing: 0%;
     }
-    
-    #formulario{
+    /*Formulario comeca aqui*/
+    #formulario > form{
         width: 600px;
         height: 692px;
         border-radius: 0px 8px 8px 0px;
@@ -1175,48 +1454,30 @@ body{
         margin: 0%;
     }
     
-    .areadetexto1{
+    .areadetexto{
         width: 520px;
         height: 60px;
         border-radius: 8px;
         border: 1px solid rgba(6,54,67,0.4);
+        /*alteração aqui*/
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        color:#063643;
+        /*alteração aqui*/
     }
     
-    .areadetexto1:focus{
+    .areadetexto:focus{
         border: 2px solid rgba(6,54,67);
     }
     
     .areadetexto2{
         width: 520px;
-        height: 60px;
-        border-radius: 8px;
-        border: 1px solid rgba(6,54,67,0.4);
-    }
-    
-    .areadetexto2:focus{
-        border: 2px solid rgba(6,54,67);
-    }
-    
-    .areadetexto3{
-        width: 520px;
-        height: 60px;
-        border-radius: 8px;
-        border: 1px solid rgba(6,54,67,0.4);
-    }
-    
-    .areadetexto3:focus{
-        border: 2px solid rgba(6,54,67);
-    }
-    
-    .areadetexto4{
-        width: 520px;
         height: 120px;
         border-radius: 8px;
         border: 1px solid rgba(6,54,67,0.4);
-    }
-    
-    .areadetexto4:focus{
-        border: 2px solid rgba(6,54,67);
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        color:#063643;
     }
     
     .eventohover{
@@ -1237,6 +1498,7 @@ body{
         justify-content: center;
         align-items: center;
         right: 188px;
+        border: none;
     }
     
     #txtBotao{
