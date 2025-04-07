@@ -165,11 +165,10 @@
                 </div>
             </div>
             <div id="avaliacoes"> 
-                <h1>Avaliações (34)</h1>
+                <h1 class = "onlyDesktop">Avaliações (34)</h1>
+                <h1 class = "onlyMobile" id = tituloAvaliacao >Avaliações (9)</h1>
                 <div class = "carrossel" data-carrossel>
-    
                     <ul data-comentarios>
-    
                         <li class="comentarios" data-active>
                             <div>
                                 <span class="avaliacao">
@@ -177,7 +176,8 @@
                                     <div class="comment">
                                         <img src="./assets/stars.png">
                                         <h1>Carlos Alberto</h1>
-                                        <p>Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.</p>
+                                        <p class = "onlyDesktop">Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.</p>
+                                        <p class = "onlyMobile">Atendimento excepcional! A equipe foi muito <br>cuidadosa e atenciosa com meu pet.</p>
                                     </div>
                                 </span>
         
@@ -188,7 +188,8 @@
                                     <div class="comment">
                                         <img src="./assets/stars.png">
                                         <h1>Neymar Jr</h1>
-                                        <p>Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e atenciosos.</p>
+                                        <p class = "onlyDesktop">Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e atenciosos.</p>
+                                        <p class = "onlyMobile">Não poderia estar mais feliz com o serviço desta <br>clínica. Profissionais qualificados e atenciosos.</p>
                                     </div>
                                 </span>
         
@@ -199,20 +200,24 @@
                                     <div class="comment">
                                         <img src="./assets/stars.png">
                                         <h1>Josseana da Silva</h1>
-                                        <p>Excelente clínica! Desde o primeiro contato, fui atendido com profissionalismo e <br>gentileza.</p>
+                                        <p class = "onlyDesktop">Excelente clínica! Desde o primeiro contato, fui atendida com profissionalismo e <br>gentileza.</p>
+                                        <p class = "onlyMobile">Excelente clínica! Desde o primeiro contato, fui <br>atendida com profissionalismo e gentileza.</p>
                                     </div>
                                 </span>
                             </div>
     
                             <div id = scroll>
+                                <div id = "botao-invisivel" class = "onlyMobile">
+                                    <img id = "solidsnake" class = "onlyMobile" src="./assets/arrow-Carrosel dir.svg">
+                                </div>
                                 <h1>1</h1>
                                 <button class="carrossel-botao next" id = "botao-carrossel" data-carrossel-botao = "next">
-                                    <img class = 'imgSetaDir' src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3.png">
+                                    <img class = "onlyDesktop" class = "imgSetaDir" src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3.png">
+                                    <img class = "onlyMobile" src="./assets/arrow-Carrosel dir.svg">
                                 </button>
                             </div>
-    
+
                         </li>
-    
                         <li class="comentarios">
                             <div>
                                 <span class="avaliacao">
@@ -249,16 +254,17 @@
                             
                             <div id = scroll>
                                 <button class="carrossel-botao prev" id = "botao-carrossel" data-carrossel-botao = "prev">
-                                    <img class = 'imgSetaEs' src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3 2.png">
+                                    <img class = "onlyDesktop" class = "imgSetaEs"  src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3 2.png">
+                                    <img class = "onlyMobile" src="./assets/arrow-Carrosel es.svg">
                                 </button>
                                 <h1>2</h1>
                                 <button class="carrossel-botao next" id = "botao-carrossel" data-carrossel-botao = "next">
-                                    <img class = 'imgSetaDir' src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3.png">
+                                    <img class = "onlyDesktop" class = "imgSetaDir" src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3.png">
+                                    <img class = "onlyMobile" src="./assets/arrow-Carrosel dir.svg">
                                 </button>
                             </div>
                             
                         </li>
-    
                         <li class="comentarios">
                             <div>
                                 <span class="avaliacao">
@@ -295,30 +301,29 @@
     
                             <div id = scroll>
                                 <button class="carrossel-botao prev" id = "botao-carrossel" data-carrossel-botao = "prev">
-                                    <img class = 'imgSetaEs' src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3 2.png">
+                                    <img class = "onlyDesktop" class = "imgSetaEs" src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3 2.png">
+                                    <img class = "onlyMobile" src="./assets/arrow-Carrosel es.svg">
                                 </button>
                                 <h1>3</h1>
+                                <div id = "botao-invisivel">
+                                    <img id = "solidsnake" src="./assets/arrow-Carrosel dir.svg">
+                                </div>
                             </div>
                                
                         </li>
-    
                     </ul>
-                        
-                    
                 </div>
-    
             </div> 
+        </div>
 
-        </div> 
-    
-            </div> 
+        <div> 
             <div id = "nossoContato">
                 <div id = "textoQuadrado">  
                     <div id = "titulo">
                         <p>Entre em contato</p>
                     </div>
                     <div id = "fundoQuadrado">
-                        <div id = "info" class="onlyDesktop">
+                        <div class="onlyDesktop" id = "info">
                             <div id="infoContent">
                                 <p id = "local">Localização</p>
                                 <p id = "logradouro">Rua - Fulana de tal, 9999 <br> CEP 99999-999 Pindorama/SP</p>

@@ -294,6 +294,270 @@ body{
     flex-direction: column;
 }
 
+#avaliacoes {
+    display: flex;
+    width: 100%;
+    height: 60dvh;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 5dvh;
+}
+
+#tituloAvaliacao{
+    position: relative;
+    color: var(--Colors-blue1100, #063643);
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    width: 39dvw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+    left: 31dvw;
+}
+
+.carrossel {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+
+.avaliacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 4dvh 0px;
+}
+
+.avaliacao > img {
+    width: 7dvh;
+    height: 7dvh;
+}
+
+.comment {
+    display: flex;
+    height: 8dvh;
+    flex-direction: column;
+    color: var(--Colors-blue1100, #063643);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    margin-left: 30px;
+}
+
+.comment > img {
+    height: 13px;
+    width: 86px;
+    margin-bottom: 3px;
+}
+
+.comment h1 {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.comment p {
+    font-size: 12px;
+    width: 70dvw;
+}
+
+#scroll {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 12dvw;
+}
+
+#botao-carrossel {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 100px;
+    border: 0;
+}
+
+#scroll > h1 {
+    color: var(--Colors-blue1100, #063643);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.18px;
+}
+
+#botao-invisivel{
+    background-color: #E2F5FA;
+}
+
+#solidsnake{
+    opacity: 0;
+}
+
+.comentarios{
+    display: none;
+    margin-top: -6dvh;
+}
+
+.comentarios[data-active] {
+    display: block;
+}
+
+.carrossel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.carrossel-botao:hover{
+    background-color: #6BB7CB;
+    cursor: pointer
+}
+
+.carrossel-botao-focus{
+    cursor: pointer;
+}
+
+.carrossel-botao-click{
+    background-color: #063643;
+}
+
+/*comeca aqui*/
+
+#titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFDFF;
+    height: 7dvh;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-family: 'Inter', sans-serif;
+    color: #063643;
+    border: none;
+}
+
+#formulario > form{
+    width: 100%;
+    height: 55dvh;
+    background-color: #FAFDFF;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#nome{
+    margin-top: -10dvh;
+    margin-left: 6dvw;
+    width: 90dvw;
+    height: 7dvh;
+}
+
+#sobreNome{
+    margin-left: 6dvw;
+    width: 90dvw;
+    height: 7dvh;
+}
+
+#email{
+    margin-left: 6dvw;
+    width: 90dvw;
+    height: 7dvh;
+}
+
+#mensagem{
+    margin-left: 6dvw;
+    width: 90dvw;
+    height: 7dvh;
+}
+
+#txt{
+    width: 18dvw;
+    height: 2dvh;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #063643;
+    margin: 0%;
+}
+
+.areadetexto{
+    width: 85dvw;
+    height: 5dvh;
+    border-radius: 8px;
+    border: 1px solid rgba(6,54,67,0.4);
+    /*alteração aqui*/
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color:#063643;
+    /*alteração aqui*/
+}
+
+.areadetexto:focus{
+    border: 2px solid rgba(6,54,67);
+}
+
+.areadetexto2{
+    width: 85dvw;
+    height: 8dvh;
+    border-radius: 8px;
+    border: 1px solid rgba(6,54,67,0.4);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color:#063643;
+}
+
+.eventohover{
+    cursor: pointer;
+}
+
+.eventobotao{
+    cursor: default;
+}
+
+.botaoEnviar{
+    width: 35dvw;
+    height: 7dvh;
+    border-radius: 8px;
+    background-color: #0F637A;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    bottom: -8dvh;
+}
+
+#txtBotao{
+    width: 75px;
+    height: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #F8F8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botaoEnviar:hover{
+    background-color: #063643;
+    cursor: pointer;
+}
+
+/*termina aqui*/
+
 #mediasMobile{
     display: flex;
     justify-content: center;
@@ -314,7 +578,7 @@ footer {
     height: 30dvh;
     flex-shrink: 0;
     border-top: 1px solid var(--Colors-blue300, #C7EBFB);
-    background: #F8F8FF;
+    background: #FFFFFFFF;
     position: relative;
 }
 
@@ -1108,6 +1372,7 @@ footer {
         padding: 0 80px;
         flex-direction: column;
         position: relative;
+        margin: 0;
     }
     
     #avaliacoes>h1{
@@ -1118,6 +1383,7 @@ footer {
         font-weight: 700;
         line-height: normal;
         margin-top: 40px;
+        margin-bottom: 5dvh;
     }
     
     .carrossel {
@@ -1137,6 +1403,7 @@ footer {
     .avaliacao {
         display: flex;
         flex-direction: row;
+        justify-content: unset;
         width: 100%;
         margin: 4dvh 0px;
     }
@@ -1156,6 +1423,7 @@ footer {
         font-weight: 400;
         font-style: normal; 
         margin-left: 30px;
+        
     }
     
     .comment img {
@@ -1257,6 +1525,7 @@ footer {
         font-family: 'Inter', sans-serif;
         color: #063643;
         margin-bottom: 24px;
+        background: none;
     }
     
     #fundoQuadrado{
@@ -1407,7 +1676,7 @@ footer {
         line-height: 100%;
         letter-spacing: 0%;
     }
-    /*Formulario comeca aqui*/
+
     #formulario > form{
         width: 600px;
         height: 692px;
@@ -1425,21 +1694,25 @@ footer {
     #nome{
         width: 520px;
         height: 92px;
+        margin: 0;
     }
     
     #sobreNome{
         width: 520px;
         height: 92px;
+        margin: 0;
     }
     
     #email{
         width: 520px;
         height: 92px;
+        margin: 0;
     }
     
     #mensagem{
         width: 520px;
         height: 152px;
+        margin: 0;
     }
     
     #txt{
@@ -1499,6 +1772,8 @@ footer {
         align-items: center;
         right: 188px;
         border: none;
+        bottom: 0;
+        
     }
     
     #txtBotao{
