@@ -20,7 +20,7 @@ function changeSlide(direction) {
         currentIndex = slides.length - 1; 
     } else if (currentIndex >= slides.length) {
         currentIndex = 0; 
-    }
+    }   
 
     slides[currentIndex].classList.add("on"); 
     updateEllipse()

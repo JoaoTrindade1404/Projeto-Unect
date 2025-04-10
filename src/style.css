@@ -1529,13 +1529,14 @@ footer {
     
     #titulo{
         display: flex;
+        justify-content: unset;
         font-size: 24px;
         font-weight: 700;
         line-height: 100%;
         letter-spacing: 0%;
         font-family: 'Inter', sans-serif;
         color: #063643;
-        margin-bottom: 24px;
+        margin-bottom: 1dvh;
         background: none;
     }
     
