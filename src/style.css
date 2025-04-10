@@ -497,11 +497,10 @@ body{
     height: 5dvh;
     border-radius: 8px;
     border: 1px solid rgba(6,54,67,0.4);
-    /*alteração aqui*/
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     color:#063643;
-    /*alteração aqui*/
+    padding: 10px;
 }
 
 .areadetexto:focus{
@@ -516,6 +515,8 @@ body{
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     color:#063643;
+    padding: 10px;
+    resize: none;
 }
 
 .eventohover{
