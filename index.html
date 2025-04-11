@@ -3,10 +3,427 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pindorama Pets - Veterinária</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="container">
+        <div id="header">
+            <img class="onlyMobile" src="./assets/Menu.svg">
+            <img class="onlyMobile" id="mobileLogo" src="./assets/LogoMobile.svg">
+            <a href="#banner"><img id="logoHeader" src="./assets/Logo-horizontal.svg"></a>
+            <div id="menuHeader">
+                <a href="#banner"><button id="initButton"class="botaoMenu">Início</button></a>
+                <a href="#divNossosservicos"><button id="servicesButton" class="botaoMenu">Serviços</button></a>
+                <a href="#divQuemsomos"><button id="aboutustButton" class="botaoMenu">Sobre nós</button></a>
+                <a href="#nossosContatos"><button id="contactButton" class="botaoMenu">Contato</button></a>
+            </div>
+        </div>
+        <div id="banners">
+            <div id="banner">
+                <div id="bannerText">
+                    <h1 class="onlyDesktop">Cuidando do Seu Pet com <br> Profissionalismo e Carinho</h1>
+                    <h1 class="onlyMobile">Cuidando do seu <br>animal com muito <br>amor</h1>
+                    <img class="onlyMobile" id="bannerImgMbl" src="./assets/img.svg">
+                    <button>Entre em contato</button>
+                </div>
+                <span><img class="onlyDesktop" id="bannerImg" src="./assets/img.svg"></span>
+                <span><img class="onlyDesktop" id="bannerWave" src="./assets/Waveform.svg"></span>
+                
+            </div>
+            <div id="bannerCarrossel">
+                <div id="conteudoCarrossel">
+                    <button id="prevButton" onclick="changeSlide(-1)"><img class="button" src="./assets/arrow_back_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"></button>
+                    <div id="banner1" class="slider on">
+                        <div id="conteudoBanner1">
+                            <img class="imgBanner" id="pata1"  src="./assets/pata.svg">
+                            <img class="imgBanner" id="vacina" src="./assets/vacina.svg">
+                            <img class="imgBanner" id="pata2" src="./assets/pata.svg">
+                            <div id="textBanner1">
+                                <h1>Campanha de vacinação</h1>
+                                <h2>Nos dias 19 a 28 de novembro</h2>
+                                <button>Saiba mais</button>
+                            </div>
+                            <img id="imgGato" src="./assets/gato.svg">
+                        </div>
+                    </div>
+                    <div id="banner2" class="slider">
+                        <div id="conteudoBanner2">
+                            <div id="textBanner2">
+                                <h1>Campanha de doação</h1>
+                                <p>Dê um lar cheio de amor a quem só quer te fazer feliz!<br>Adote um amigo de quatro patas e transforme sua<br>vida e a dele.</p>
+                                <button>Saiba mais</button>
+                            </div>
+                            <img id="gatoBanner2" src="./assets/gato banner2.svg">
+                            <img id="cachorroBanner2" src="./assets/cachorro banner2.svg">
+                        </div>
+                    </div>
+                    <div id="banner3" class="slider">
+                        <div id="conteudoBanner3">
+                            <div id="textBanner3">
+                                <h1>Banho e tosa: cuidado e saúde para seu pet</h1>
+                                <p>Nossa clínica dispõe do serviço de higiene para seu Pet<br>permanecer limpo, cheiroso e longe de parasitas.</p>
+                                <button>Saiba mais</button>
+                            </div>
+                            <img src="./assets/gato banner3.svg">
+                        </div>
+                    </div>
+                    <button id="fwButton" onclick="changeSlide(1)"><img class="button" src="./assets/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"></button>
+                </div>  
+                <div class="ellipses">
+                    <img src="./assets/Ellipse 1.png" class="ellipse" onclick="goToSlide(0)">
+                    <img src="./assets/Ellipse 2.png" class="ellipse" onclick="goToSlide(1)">
+                    <img src="./assets/Ellipse 2.png" class="ellipse" onclick="goToSlide(2)">
+                </div>
+            </div>
+        </div>
+        <div id = "divQuemsomos">
+            <div id = "logo" class="onlyDesktop">
+                <img src="./assets/logoazulpindorama.svg"/>
+            </div>
+            <div id = "texto" class="onlyDesktop">
+                <p class = "quemsomos">Quem somos?</p>
+                <p class = "objetivo">Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, 
+                    com uma equipe dedicada e instalações modernas, buscamos garantir saúde e conforto em cada atendimento. 
+                    Cuidamos do seu animalzinho como se fosse nosso!</p>
+            </div>
+        </div>
+
+        <div class="onlyMobile">
+            <div id = "quemSomosMobile">
+                <p id = "txtquemsomosMobile">Quem somos?</p>
+                <div id = "qmsLogoMobile">
+                    <img src="/assets/logoQuemSomos.svg">
+                </div>
+                <p id = "objetivoMobile" class="onlyMobile">
+                    Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, 
+                    com uma equipe dedicada e instalações modernas, buscamos <br> garantir saúde e conforto em cada atendimento. 
+                </p>
+                <p id = "lemaMobile" class="onlyMobile">
+                    Cuidamos do seu animalzinho com amor!
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="onlyMobile">
+            <div id = "nossosServicosMobile">
+                <p id = "tituloNsMobile">Nossos serviços visam o <br>cuidado do seu pet</p>
+                <p id = "textoNsMobile">Na nossa clínica veterinária, cada consulta é <br>realizada com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet.</p>
+                <button id = "botaoConsulta">Agende uma consulta</button>
+                <img id="imgGatoBannerMobile" src="./assets/Vector.svg">
+            </div>
+        </div>
+
+        <div id = "divNossosservicos">
+            <div id = "paragrafoGato" class="onlyDesktop">
+                <div id = concat>
+                    <p class = "Nossosservicos">Nossos serviços</p>
+                    <img src = "assets/AdobeStock_107432576-scaled 1.svg" id = "gato" />
+                </div>
+                <p class = "descricao1">Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet. 
+                    Contamos com uma equipe experiente e atualizada para oferecer diagnósticos precisos e tratamentos eficazes. </p>
+            </div>
+            <div id ="paragrafoCachorro" class="onlyDesktop">
+                <p class = "descricao2">Nós cuidamos do seu pet com o carinho e respeito que ele merece. 
+                    Nossa equipe dedica atenção a cada detalhe, proporcionando um ambiente acolhedor e seguro para que seu animalzinho se sinta em casa. </p>
+                <img src = "assets/Medicina-Veterinaria 1.svg" id = "cachorro" />
+            </div>
+        </div>
+
+
+        <span class="onlyMobile" id="h1Profissionais"><h1 class="onlyMobile">Nossos profissionais</h1></span>
+        <div id="containerSecundario">
+            <div id="containerProfissionais">
+                <h1 class="onlyDesktop">Nossos profissionais</h1>
+                <div id="profissionais">
+                    <span id="med1" class="med">
+                        <img class="imgMed" src="./assets/medico1.svg">
+                        <h1 class="nameMed">Carlos De Souza</h1>
+                        <h2 class="areaMed">Cirurgia Veterinária</h2>
+                    </span>
+                    <span id="med2" class="med">
+                        <img class="imgMed" src="./assets/medico2.svg">
+                        <h1 class="nameMed">João Paulo</h1>
+                        <h2 class="areaMed">Dermatologia Veterinária</h2>
+                    </span>
+                    <span id="med3" class="med">
+                        <img class="imgMed" src="./assets/medico3.svg">
+                        <h1 class="nameMed">José da Silva</h1>
+                        <h2 class="areaMed">Patologia</h2>
+                    </span>
+                    <span id="med4" class="med">
+                        <img class="imgMed" src="./assets/medico4.svg">
+                        <h1 class="nameMed">fulano</h1>
+                        <h2 class="areaMed">Anestesiologia</h2>
+                    </span>
+                </div>
+            </div>
+            <div id="avaliacoes"> 
+                <h1 class = "onlyDesktop">Avaliações (34)</h1>
+                <h1 class = "onlyMobile" id = tituloAvaliacao >Avaliações (9)</h1>
+                <div class = "carrossel" data-carrossel>
+                    <ul data-comentarios>
+                        <li class="comentarios" data-active>
+                            <div>
+                                <span class="avaliacao">
+                                    <img src="./assets/Foto_comentario.svg">
+                                    <div class="comment">
+                                        <img src="./assets/stars.svg">
+                                        <h1>Carlos Alberto</h1>
+                                        <p class = "onlyDesktop">Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.</p>
+                                        <p class = "onlyMobile">Atendimento excepcional! A equipe foi muito <br>cuidadosa e atenciosa com meu pet.</p>
+                                    </div>
+                                </span>
+        
+                                <span class="divisoria"></span>
+        
+                                <span class="avaliacao">
+                                    <img id="neymar" src="./assets/pexels-photo-2379005 1.svg">
+                                    <div class="comment">
+                                        <img src="./assets/stars.svg">
+                                        <h1>Neymar Jr</h1>
+                                        <p class = "onlyDesktop">Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e atenciosos.</p>
+                                        <p class = "onlyMobile">Não poderia estar mais feliz com o serviço desta <br>clínica. Profissionais qualificados e atenciosos.</p>
+                                    </div>
+                                </span>
+        
+                                <span class="divisoria"></span>
+        
+                                <span class="avaliacao">
+                                    <img src="./assets/MulherComentario.svg">
+                                    <div class="comment">
+                                        <img src="./assets/stars.svg">
+                                        <h1>Josseana da Silva</h1>
+                                        <p class = "onlyDesktop">Excelente clínica! Desde o primeiro contato, fui atendida com profissionalismo e <br>gentileza.</p>
+                                        <p class = "onlyMobile">Excelente clínica! Desde o primeiro contato, fui <br>atendida com profissionalismo e gentileza.</p>
+                                    </div>
+                                </span>
+                            </div>
     
+                            <div id = scroll>
+                                <div id = "botao-invisivel" class = "onlyMobile">
+                                    <img class = "solidsnake" class = "onlyMobile" src="./assets/arrow-Carrosel es.svg">
+                                </div>
+                                <h1>1</h1>
+                                <button class = "botao-carrossel" class="carrossel-botao next" data-carrossel-botao = "next">
+                                    <img class = "onlyDesktop imgSetaDir" src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3.png">
+                                    <img class = "onlyMobile" src="./assets/arrow-Carrosel dir.svg">
+                                </button>
+                            </div>
+
+                        </li>
+                        <li class="comentarios">
+                            <div>
+                                <span class="avaliacao">
+                                    <img src="./assets/Foto_comentario.svg">
+                                    <div class="comment">
+                                        <img src="./assets/stars.svg">
+                                        <h1>João Henrique</h1>
+                                        <p>Atendimento de primeira, cuidam muito bem dos animais e sempre explicam tudo com clareza.</p>
+                                    </div>
+                                </span>
+        
+                                <span class="divisoria"></span>
+        
+                                <span class="avaliacao">
+                                    <img id="neymar" src="./assets/pexels-photo-2379005 1.svg">
+                                    <div class="comment">
+                                        <img src="./assets/stars.svg">
+                                        <h1>Adamilton Jr</h1>
+                                        <p>A clínica é muito bem equipada, e os profissionais são incríveis, mas o tempo de espera poderia ser menor.</p>
+                                    </div>
+                                </span>
+        
+                                <span class="divisoria"></span>
+        
+                                <span class="avaliacao">
+                                    <img src="./assets/MulherComentario.svg">
+                                    <div class="comment">
+                                        <img src="./assets/stars.svg">
+                                        <h1>Luciana da Silva</h1>
+                                        <p>Profissionais capacitados e atenciosos, meu gato recebeu o melhor cuidado. Recomendo muito!</p>
+                                    </div>
+                                </span>
+                            </div>
+                            
+                            <div id = scroll>
+                                <button class = "botao-carrossel" class="carrossel-botao prev" data-carrossel-botao = "prev">
+                                    <img class = "onlyDesktop imgSetaEs"  src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3 2.png">
+                                    <img class = "onlyMobile" src="./assets/arrow-Carrosel es.svg">
+                                </button>
+                                <h1>2</h1>
+                                <button class = "botao-carrossel" class="carrossel-botao next" data-carrossel-botao = "next">
+                                    <img class = "onlyDesktop imgSetaDir" src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3.png">
+                                    <img class = "onlyMobile" src="./assets/arrow-Carrosel dir.svg">
+                                </button>
+                            </div>
+                            
+                        </li>
+                        <li class="comentarios">
+                            <div>
+                                <span class="avaliacao">
+                                    <img src="./assets/Foto_comentario.svg">
+                                    <div class="comment">
+                                        <img src="./assets/stars.svg">
+                                        <h1>Matheus Brito</h1>
+                                        <p>A equipe é super dedicada e o ambiente é acolhedor, perfeito para quem se <br>importa com o bem-estar do pet.</p>
+                                    </div>
+                                </span>
+        
+                                <span class="divisoria"></span>
+        
+                                <span class="avaliacao">
+                                    <img id="neymar" src="./assets/pexels-photo-2379005 1.svg">
+                                    <div class="comment">
+                                        <img src="./assets/stars.svg">
+                                        <h1>Luiz Jr</h1>
+                                        <p>Atendimento excelente e muito atencioso! Meu pet recebeu todo o cuidado necessário e ficou ótimo.</p>
+                                    </div>
+                                </span>
+        
+                                <span class="divisoria"></span>
+        
+                                <span class="avaliacao">
+                                    <img src="./assets/MulherComentario.svg">
+                                    <div class="comment">
+                                        <img src="./assets/stars.svg">
+                                        <h1>Clariane da Silva</h1>
+                                        <p>Fiquei satisfeita com o atendimento, mas achei os preços um pouco altos para alguns serviços.</p>
+                                    </div>
+                                </span>
+                            </div>
+    
+                            <div id = scroll>
+                                <button  class = "botao-carrossel" class="carrossel-botao prev" data-carrossel-botao = "prev">
+                                    <img class = "onlyDesktop imgSetaEs" src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3 2.png">
+                                    <img class = "onlyMobile" src="./assets/arrow-Carrosel es.svg">
+                                </button>
+                                <h1>3</h1>
+                                <button  class="onlyDesktop" id="botao-carrossel" style="opacity: 0;">
+                                    <img class = "imgSetaEs" src="./assets/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 3 2.png">
+                                </button>
+                                <div class="onlyMobile" id = "botao-invisivel">
+                                    <img class="onlyMobile" style="opacity: 0;" src="./assets/arrow-Carrosel dir.svg">
+                                </div>
+                            </div>
+                               
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+
+        <div> 
+            <div id = "nossoContato">
+                <div id = "textoQuadrado">  
+                    <div id = "titulo">
+                        <p>Entre em contato</p>
+                    </div>
+                    <div id = "fundoQuadrado">
+                        <div class="onlyDesktop" id = "info">
+                            <div id="infoContent">
+                                <p id = "local">Localização</p>
+                                <p id = "logradouro">Rua - Fulana de tal, 9999 <br> CEP 99999-999 Pindorama/SP</p>
+                                <div id = "mapaPointer">
+                                    <img src = "assets/mapapin.png">
+                                </div>
+                                <div id = "redesociais">
+                                    <div id = "whatsapp">
+                                        <img src = "assets/icon-whatsapp.svg" id = zapzap>
+                                        <p id = "textowpp">(99)-99999999</p>
+                                    </div>
+                                    <div id = instagram>
+                                        <img src = "assets/icon-instagram.svg" id = insta>
+                                        <p id = "textoint">@PindoramaClinica</p>
+                                    </div>
+                                    <div id = "facebook">
+                                        <img src = "assets/icon-face.svg" id = fb>
+                                        <p id = "textofb">PindoramaClinica</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id = "formulario">
+                            <form onsubmit="simulaEnvio()">
+                                <div id = "nome">
+                                    <p id = txt>Nome</p>
+                                    <input type="text" class = "areadetexto" data-text-area>
+                                </div>
+                                <div id = "sobreNome">
+                                    <p id = txt>Sobrenome</p>
+                                    <input type="text" class = "areadetexto" data-text-area>
+                                </div>
+                                <div id = "email">
+                                    <p id = txt>E-mail</p>
+                                    <input type="text" class = "areadetexto" data-text-area>
+                                </div>
+                                <div id = "mensagem">
+                                    <p id = txt>Mensagem</p>
+                                    <textarea class = "areadetexto2" rows = "4" cols = "47" maxlength="180" data-text-area ></textarea>
+                                </div>
+                                <button type="submit" class = "botaoEnviar">
+                                    <p id = "txtBotao">Enviar</p> 
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="onlyMobile">
+            <div id="mediasMobile">
+                <img src="./assets/icon-whatsapp.svg" class="mediaMobileImg">
+                <img src="./assets/icon-instagram.svg" class="mediaMobileImg">
+                <img src="./assets/icon-face.svg" class="mediaMobileImg">
+            </div>
+        </div>
+        <footer id="footer">
+            <div id="footerContent">
+                <a class="onlyDesktop" href="#banner"><img src="./assets/logo.svg"></a>
+                <ul>
+                    <p class="ulTitle"> NOSSOS SERVIÇOS</p>
+                    <li>
+                        SOBRE NÓS
+                    </li>
+                    <li>
+                        CONSULTA VETERINÁRIA
+                    </li>
+                    <li>
+                        NOSSOS SERVIÇOS
+                    </li>
+                </ul>
+                <ul>
+                    <p class="ulTitle">INSTITUCIONAL</p>
+                    <li>
+                        PROGRAMA DE ADOÇÃO
+                    </li>
+                    <li>
+                        TERMOS DE COMPROMISSO 
+                    </li>
+                    <li>
+                        UNECT JR 
+                    </li>
+                </ul>
+                <div class="onlyDesktop" id="nossosContatos">
+                    <h1>NOSSOS CONTATOS</h1>
+                    <div class="onlyDesktop" id="socialMedias">
+                        <img src="./assets/icon-whatsapp.svg">
+                        <img src="./assets/icon-instagram.svg">
+                        <img src="./assets/icon-face.svg">
+                    </div>
+                </div>
+            </div>
+            <div id="footerUnect">
+                <h1>UNECT JR - TODOS OS DIREITOS RESERVADOS</h1>
+            </div>
+        </footer>
+    </div>
+    <script src="./src/script.js"></script>
 </body>
 </html>
