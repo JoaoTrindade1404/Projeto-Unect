@@ -56,7 +56,14 @@ textarea.forEach(txta =>{
 });
 
 function simulaEnvio(){
-    textarea.values = "";
+    
+    event.preventDefault();
+
+    textarea.forEach(txta => {
+        txta.value = "";
+    });
+
+    alert("Formulário enviado com sucesso!");
 };
 
 const botoes = document.querySelectorAll("[data-carrossel-botao]");
