@@ -2,30 +2,37 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html, body{
+:root {
+    --Colors-white: #F8F8FF;
+    --Colors-blue200:  #E2F5FA;
+    --Colors-blue100:  #E6EFFA;
+    --Colors-blue300:  #C7EBFB;
+    --Colors-blue400: #89C5D5;
+    --Colors-blue500: #7CCBE0;
+    --Colors-blue600: #63B3C9;
+    --Colors-blue700: #51A2B8;
+    --Colors-blue800: #3089A1;
+    --Colors-blue900: #1C7992;
+    --Colors-blue1000: #0F637A;
+    --Colors-blue1100: #063643;
+}
+*{
+    font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body{
     position: relative;
-    scroll-behavior: smooth;
     background: var(--Colors-blue200, #E2F5FA);
-}
-
-*{
-    font-family: "Open Sans", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 #container {
@@ -41,7 +48,7 @@ body{
 }
 
 #header {
-    background: #F8F8FF;
+    background: var(--Colors-white);
     height: 12dvh;
     width: 100%;
     display: flex;
@@ -85,15 +92,15 @@ body{
 }
 #bannerText>h1 {
     font-family: 'Inter', sans-serif;
-    color: rgba(6, 54, 67, 1);
+    color: var(--Colors-blue1100);
     font-size: 24px;
     font-weight: 800;
     margin-right: 30dvw;
     margin-top: 5dvh;
 }
 #bannerText>button {
-    background: rgba(15, 99, 122, 1);
-    color: white;
+    background: var(--Colors-blue1000);
+    color: var(--Colors-white);
     border: none;
     border-radius: 5px;
     height: 6dvh;
@@ -105,8 +112,8 @@ body{
     margin-top: 1dvh;
 }
 #bannerText>button:hover{
-    background: rgba(124, 203, 224, 1);
-    color: rgba(6, 54, 67, 1);
+    background: var(--Colors-blue500);
+    color: var(--Colors-blue1100);
 }
 #bannerImgMbl {
     width: 90dvw;
@@ -117,7 +124,7 @@ body{
 
 #quemSomosMobile{
     margin-top: 2dvh;
-    background-color: #89C5D5;
+    background-color: var(--Colors-blue400);
     height: 50dvh;
     width: 100%;
     border-radius: 2px;
@@ -134,7 +141,7 @@ body{
     font-size: 28px;
     font-weight: 700;
     font-family: "Poppins", sans-serif;
-    color: #063643;
+    color: var(--Colors-blue1100);
     letter-spacing: 0%;
     line-height: 100%;
     text-align: center;
@@ -151,7 +158,7 @@ body{
     font-family: "Open Sans", sans-serif;
     line-height: 20px;
     letter-spacing: 2%;
-    color: #063643;
+    color: var(--Colors-blue1100);
     text-align: center;
     width: 365px;
     height: 69px;
@@ -163,13 +170,13 @@ body{
     font-family: "Open Sans", sans-serif;
     line-height: 20px;
     letter-spacing: 2%;
-    color: #063643;
+    color: var(--Colors-blue1100);
     text-align: center;
     height: 20px;
 }
 
 #nossosServicosMobile{
-    background-color: #63B3C9;
+    background-color: var(--Colors-blue600);
     width: 100%;
     height: 50dvh;
     background-image: url("../assets/fundo-animais-icons\ 2.png");
@@ -194,7 +201,7 @@ body{
     font-size: 6.5dvw;
     font-weight: 700;
     font-family: "Poppins", sans-serif;
-    color: #063643;
+    color: var(--Colors-blue1100);
     letter-spacing: 0%;
     text-align: center;
     line-height: 100%;
@@ -207,14 +214,14 @@ body{
     font-family: "Open Sans", sans-serif;
     line-height: 20px;
     letter-spacing: 2%;
-    color: #063643;
+    color: var(--Colors-blue1100);
     text-align: center;
     width: 365px;
     height: 69px;
 }
 
 #botaoConsulta{
-    background-color: #F8F8FF;
+    background-color: var(--Colors-white);
     border: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -229,8 +236,8 @@ body{
 }
 
 #botaoConsulta:hover{
-    color: #F8F8FF;
-    background-color: #063643;
+    color: var(--Colors-white);
+    background-color: var(--Colors-blue1100);
 }
 
 #h1Profissionais{
@@ -256,8 +263,8 @@ body{
     height: fit-content;
     width: 100%;
     font-family: "Poppins", sans-serif;
-    color: rgba(6, 54, 67, 1);
-    background: #F8F8FF;
+    color: var(--Colors-blue1100);
+    background: var(--Colors-white);
     padding: 20px 10px 20px 10px;
 }
 
@@ -281,7 +288,7 @@ body{
 
 #profissionais {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas iguais */
+    grid-template-columns: repeat(2, 1fr); 
     flex-direction: row;
     gap: 5dvw 0;
     margin-top: 3dvh;
@@ -391,7 +398,7 @@ body{
 }
 
 #botao-invisivel{
-    background-color: #E2F5FA;
+    background-color: var(--Colors-blue200);
 }
 
 .solidsnake{
@@ -414,7 +421,7 @@ body{
 }
 
 .carrossel-botao:hover{
-    background-color: #6BB7CB;
+    background-color: var(--Colors-blue600);
     cursor: pointer
 }
 
@@ -423,30 +430,28 @@ body{
 }
 
 .carrossel-botao-click{
-    background-color: #063643;
+    background-color: var(--Colors-blue1100);
 }
-
-/*comeca aqui*/
 
 #titulo{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FAFDFF;
+    background-color: var(--Colors-white);
     height: 7dvh;
     font-size: 7dvw;
     font-weight: 700;
     line-height: 100%;
     letter-spacing: 0%;
     font-family: 'Inter', sans-serif;
-    color: #063643;
+    color: var(--Colors-blue1100);
     border: none;
 }
 
 #formulario > form{
     width: 100%;
     height: 55dvh;
-    background-color: #FAFDFF;
+    background-color: var(--Colors-white);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -488,7 +493,7 @@ body{
     font-size: 13px;
     line-height: 100%;
     letter-spacing: 0%;
-    color: #063643;
+    color: var(--Colors-blue1100);
     margin: 0%;
 }
 
@@ -499,12 +504,12 @@ body{
     border: 1px solid rgba(6,54,67,0.4);
     font-family: 'Inter', sans-serif;
     font-size: 20px;
-    color:#063643;
+    color:var(--Colors-blue1100);
     padding: 10px;
 }
 
 .areadetexto:focus{
-    border: 2px solid rgba(6,54,67);
+    border: 2px solid var(--Colors-blue1100);
 }
 
 .areadetexto2{
@@ -514,7 +519,7 @@ body{
     border: 1px solid rgba(6,54,67,0.4);
     font-family: 'Inter', sans-serif;
     font-size: 20px;
-    color:#063643;
+    color:var(--Colors-blue1100);
     padding: 10px;
     resize: none;
 }
@@ -531,7 +536,7 @@ body{
     width: 35dvw;
     height: 7dvh;
     border-radius: 8px;
-    background-color: #0F637A;
+    background-color: var(--Colors-blue1000);
     position: relative;
     display: flex;
     justify-content: center;
@@ -548,18 +553,16 @@ body{
     font-size: 24px;
     line-height: 100%;
     letter-spacing: 0%;
-    color: #F8F8FF;
+    color: var(--Colors-white);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .botaoEnviar:hover{
-    background-color: #063643;
+    background-color: var(--Colors-blue1100);
     cursor: pointer;
 }
-
-/*termina aqui*/
 
 #mediasMobile{
     display: flex;
@@ -581,7 +584,7 @@ footer {
     height: 30dvh;
     flex-shrink: 0;
     border-top: 1px solid var(--Colors-blue300, #C7EBFB);
-    background: #FFFFFFFF;
+    background: var(--Colors-white);
     position: relative;
 }
 
@@ -680,18 +683,18 @@ footer {
     
     .botaoMenu {
         font-family: "Poppins", sans-serif;
-        color: rgba(6, 54, 67, 1);
+        color: var(--Colors-blue1100);
         font-weight: 400;
         font-size: 24px;
         padding: 0px 4px;
         border: none;
         cursor: pointer;
         transition: 0.2s;
-        background-color: #F8F8FF;
+        background-color: var(--Colors-white);
     }
     
     .botaoMenu:hover {
-        background: rgba(107, 183, 203, 0.4);
+        background: var(--Colors-blue300);
         border-radius: 8px;
     }
     
@@ -727,8 +730,8 @@ footer {
     }
     
     #bannerText>button {
-        background: rgba(15, 99, 122, 1);
-        color: white;
+        background: var(--Colors-blue900);
+        color: var(--Colors-white);
         border: none;
         border-radius: 8px;
         height: 8dvh;
@@ -741,13 +744,13 @@ footer {
     }
 
     #bannerText>button:hover{
-        background: rgba(124, 203, 224, 1);
-        color: rgba(6, 54, 67, 1);
+        background: var(--Colors-blue500);
+        color: var(--Colors-blue1100);
     }
     
     #bannerText>h1 {
         font-family: "Poppins", sans-serif;
-        color: rgba(6, 54, 67, 1);
+        color: var(--Colors-blue1100);
         font-size: 21px;
         font-weight: 700;
         margin-top: 0;
@@ -786,7 +789,7 @@ footer {
     #banner1{
         width: 58dvw;
         height: 30dvh;
-        background: rgba(99, 179, 201, 1);
+        background: var(--Colors-blue500);
         border-radius: 8px;
         position: relative;
         align-items: center;
@@ -796,7 +799,7 @@ footer {
     #banner2 {
         width: 58dvw;
         height: 30dvh;
-        background-color: rgba(6, 54, 67, 1);
+        background-color: var(--Colors-blue1100);
         background-image: url("../assets/background\ banner.png");
         border-radius: 8px;
         overflow: hidden;
@@ -805,7 +808,7 @@ footer {
     #banner3 {
         width: 58dvw;
         height: 30dvh;
-        background: rgba(248, 248, 255, 1);
+        background: var(--Colors-white);
         background-image: url('../assets/chuva\ banner3.png'), url('../assets/guarda\ chuva.png');
         background-repeat: no-repeat;
         background-position: 32dvw, 0dvw 0dvh;
@@ -899,7 +902,7 @@ footer {
     }
     
     #textBanner1 h1 {
-        color: rgba(6, 54, 67, 1);
+        color: var(--Colors-blue1100);
         font-weight: 700;
         font-size: 25px;
     }
@@ -917,7 +920,7 @@ footer {
         width: 15dvw;
         height: 7dvh;
         border-radius: 8px;
-        color: rgba(6, 54, 67, 1);
+        color: var(--Colors-blue1100);
         font-family: "Poppins", sans-serif;
         margin-top: 40px;
         font-size: 20px;
@@ -927,8 +930,8 @@ footer {
     }
     
     #textBanner1 button:hover {
-        background: rgba(6, 54, 67, 1);
-        color: rgba(248, 248, 255, 1);
+        background: var(--Colors-blue1100);
+        color: var(--Colors-white);
     }
     
     #conteudoBanner2 {
@@ -955,7 +958,7 @@ footer {
     
     #textBanner2 {
         font-family: "Poppins", sans-serif;
-        color: rgba(250, 253, 255, 1);
+        color: var(--Colors-white);
         margin-left: 8dvh;
         margin-top: 4dvh;
     }
@@ -978,7 +981,7 @@ footer {
         width: 15dvw;
         height: 7dvh;
         font-size: 21px;
-        color: rgba(6, 54, 67, 1);
+        color: var(--Colors-blue1100);
         border-radius: 8px;
         font-weight: 700;
         margin-left: 20px;
@@ -1002,7 +1005,7 @@ footer {
     
     #textBanner3 {
         font-family: "Poppins", sans-serif;
-        color: rgba(6, 54, 67, 1);
+        color: var(--Colors-blue1100);
         margin-top: 4dvh;
     }
     
@@ -1023,8 +1026,8 @@ footer {
         width: 14dvw;
         height: 7dvh;
         font-size: 20px;
-        background: rgba(6, 54, 67, 1);
-        color: rgba(248, 248, 255, 1);
+        background: var(--Colors-blue1100);
+        color: var(--Colors-white);
         border-radius: 8px;
         font-weight: 700;
         transition: 0.3s;
@@ -1034,12 +1037,12 @@ footer {
     }
     
     #textBanner3 button:hover {
-        background: rgba(124, 203, 224, 1);
-        color: rgba(6, 54, 67, 1);
+        background: var(--Colors-blue400);
+        color: var(--Colors-blue1100);
     }
     
     #divQuemsomos{
-        background-color: #89C5D5;
+        background-color: var(--Colors-blue400);
         height: 300px;
         top: 1002px;
         width: 100%;
@@ -1069,7 +1072,7 @@ footer {
         font-size: 24px;
         font-weight: 700;
         font-family: "Poppins", sans-serif;
-        color: #063643;
+        color: var(--Colors-blue1100);
         letter-spacing: 0%;
         line-height: 100%;
         width: 177px;
@@ -1084,7 +1087,7 @@ footer {
         font-family: "Open Sans", sans-serif;
         line-height: 26px;
         letter-spacing: 2%;
-        color: #063643;
+        color: var(--Colors-blue1100);
         text-align: justify;
         width: 699px;
         height: 104px;
@@ -1099,7 +1102,7 @@ footer {
     }
     
     #divNossosservicos{
-        background-color: #63B3C9;
+        background-color: var(--Colors-blue600);
         width: 100%;
         height: 743px;
         top: 1302px;
@@ -1112,7 +1115,7 @@ footer {
         font-size: 24px;
         font-weight: 700;
         font-family: "Poppins", sans-serif;
-        color: #063643;
+        color: var(--Colors-blue1100);
         line-height: 100%;
         letter-spacing: 0%;
         width: 199px;
@@ -1155,7 +1158,7 @@ footer {
         font-family: "Open Sans", sans-serif;;
         line-height: 30px;
         letter-spacing: 2%;
-        color: #063643;
+        color: var(--Colors-blue1100);
         text-align: justify;
         width: 620px;
         height: 150px;
@@ -1164,7 +1167,7 @@ footer {
     }
     
     #paragrafoCachorro{
-        background-color: #89C5D5;
+        background-color: var(--Colors-blue400);
         background-image: url("../assets/fundo-animais-icons\ 2.png");
         height: 325px;
         top: 418px;
@@ -1180,7 +1183,7 @@ footer {
         font-family: "Open Sans", sans-serif;;
         line-height: 30px;
         letter-spacing: 2%;
-        color: #063643;
+        color: var(--Colors-blue1100);
         text-align: justify;
         width: 620px;
         height: 120px;
@@ -1213,9 +1216,9 @@ footer {
         width: 60dvw;
         border-radius: 8px;
         font-family: "Poppins", sans-serif;
-        color: rgba(6, 54, 67, 1);
+        color: var(--Colors-blue1100);
         padding: 5dvh;
-        background: #F8F8FF;
+        background: var(--Colors-white);
         box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
         margin-top: 50px;
     }
@@ -1273,7 +1276,7 @@ footer {
         height: 272px;
         flex-shrink: 0;
         border-top: 1px solid var(--Colors-blue300, #C7EBFB);
-        background: #F8F8FF;
+        background: var(--Colors-white);
         position: relative;
     }
     
@@ -1495,7 +1498,7 @@ footer {
     }
     
     .carrossel-botao:hover{
-        background-color: #6BB7CB;
+        background-color: var(--Colors-blue600);
         cursor: pointer
     }
     
@@ -1504,12 +1507,12 @@ footer {
     }
     
     .carrossel-botao-click{
-        background-color: #063643;
+        background-color: var(--Colors-blue1100);
     }
     
     
     #nossoContato{
-        background-color: #E2F5FA;
+        background-color: var(--Colors-blue100);
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -1536,7 +1539,7 @@ footer {
         line-height: 100%;
         letter-spacing: 0%;
         font-family: 'Inter', sans-serif;
-        color: #063643;
+        color: var(--Colors-blue1100);
         margin-bottom: 1dvh;
         background: none;
     }
@@ -1554,7 +1557,7 @@ footer {
         height: 692px;
         border-radius: 8px 0px 0px 8px;
         border: 1px solid rgba(6,54,67,0.4);
-        background-color: #F8F8FF;
+        background-color: var(--Colors-white);
     }
     
     #infoContent{
@@ -1577,7 +1580,7 @@ footer {
         font-size: 20px;
         line-height: 100%;
         letter-spacing: 0%;
-        color: #063643;
+        color: var(--Colors-blue1100);
     }
     
     #logradouro{
@@ -1593,7 +1596,7 @@ footer {
         line-height: 26px;
         letter-spacing: 0%;
         text-align: left;
-        color: #063643;
+        color: var(--Colors-blue1100);
     }
     
     #mapaPointer{
@@ -1695,7 +1698,7 @@ footer {
         height: 692px;
         border-radius: 0px 8px 8px 0px;
         border: 1px solid rgba(6,54,67,0.4);
-        background-color: #FAFDFF;
+        background-color: var(--Colors-white);
         position: relative;
         display: flex;
         flex-direction: column;
@@ -1736,7 +1739,7 @@ footer {
         font-size: 20px;
         line-height: 100%;
         letter-spacing: 0%;
-        color: #063643;
+        color: var(--Colors-blue1100);
         margin: 0%;
     }
     
@@ -1745,15 +1748,13 @@ footer {
         height: 60px;
         border-radius: 8px;
         border: 1px solid rgba(6,54,67,0.4);
-        /*alteração aqui*/
         font-family: 'Inter', sans-serif;
         font-size: 20px;
-        color:#063643;
-        /*alteração aqui*/
+        color:var(--Colors-blue1100);
     }
     
     .areadetexto:focus{
-        border: 2px solid rgba(6,54,67);
+        border: 2px solid var(--Colors-blue1100);
     }
     
     .areadetexto2{
@@ -1763,7 +1764,7 @@ footer {
         border: 1px solid rgba(6,54,67,0.4);
         font-family: 'Inter', sans-serif;
         font-size: 20px;
-        color:#063643;
+        color:var(--Colors-blue1100);
     }
     
     .eventohover{
@@ -1778,7 +1779,7 @@ footer {
         width: 144px;
         height: 55px;
         border-radius: 8px;
-        background-color: #0F637A;
+        background-color: var(--Colors-blue1000);
         position: relative;
         display: flex;
         justify-content: center;
@@ -1797,14 +1798,14 @@ footer {
         font-size: 20px;
         line-height: 100%;
         letter-spacing: 0%;
-        color: #F8F8FF;
+        color: var(--Colors-white);
         display: flex;
         justify-content: center;
         align-items: center;
     }
     
     .botaoEnviar:hover{
-        background-color: #063643;
+        background-color: var(--Colors-blue1100);
         cursor: pointer;
     }
 }
